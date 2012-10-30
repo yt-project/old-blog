@@ -50,7 +50,7 @@ want to test out how long something takes, particularly if it's a long-running
 task, I recommend using ``pyprof2html``, which you can install with ``pip
 install pyprof2html``.  Then run a profiling code: 
 
-.. code:: bash
+.. sourcecode:: bash
 
    $ python2.7 -m cProfile -o my_slow_script.cprof my_slow_script.py
    $ pyprof2html my_slow_script.cprof 

@@ -20,7 +20,7 @@ intial volumes may or may not overlap, meaning that the combined volume may
 constitute several disjoint volumes. Here is an example showing the
 construction of a boolean volume of two disjoint spheres:
 
-.. code:: python
+.. sourcecode:: python
 
    sp1 = pf.h.sphere([0.3]*3, .15)
    sp2 = pf.h.sphere([0.7]*3, .25)
@@ -39,7 +39,7 @@ all cells that lie in both of the initial volumes. Here is an example of the
 intersection of a sphere and a cube:
 
 
-.. code:: python
+.. sourcecode:: python
 
    re1 = pf.h.region([0.5]*3, [0.0]*3, [0.7]*3)
    sp1 = pf.h.sphere([0.5]*3, 0.5)
@@ -60,7 +60,7 @@ the *second data container* does **not** cover. This can be thought of as a
 subtraction from the first volume by the second volume.  Here is an example of
 a cubical region having a corner cut out of it:
 
-.. code:: python
+.. sourcecode:: python
 
    re1 = pf.h.region([0.5]*3, [0.]*3, [1.]*3)
    re2 = pf.h.region([0.5]*3, [0.5]*3, [1.]*3)
@@ -81,7 +81,7 @@ example of a piece of Swiss cheese created from two cubical regions and two
 spheres. The second sphere ``sp2`` wraps around the periodic boundaries and
 impacts the largest cube in more than one place.
 
-.. code:: python
+.. sourcecode:: python
 
    re1 = pf.h.region([0.5]*3, [0.]*3, [1.]*3)
    re2 = pf.h.region([0.5]*3, [0.5]*3, [1.]*3)

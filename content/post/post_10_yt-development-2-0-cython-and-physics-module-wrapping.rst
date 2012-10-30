@@ -21,7 +21,7 @@ entry points for modification, and a faster import time.  The
 all new installations should have this same basic layout.  The new layout looks
 something like this: 
 
-.. code:: none
+.. sourcecode:: none
 
    yt/
    yt/data_objects

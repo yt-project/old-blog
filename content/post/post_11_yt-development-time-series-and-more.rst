@@ -18,7 +18,7 @@ The problem with time series analysis in yt has, to this point, been an issue
 of verbosity and clunkiness.  Typically, unless using the EnzoSimulation class
 (which is only available as of right now for Enzo) one would set up a loop:
 
-.. code:: python
+.. sourcecode:: python
 
     fn = 'DD%04i/DD%04i' % (pfi, pfi)
     pf = load(fn)
@@ -49,7 +49,7 @@ create an EnzoTimeSeries from the
 ``OutputLog``, and we'll find the maximum
 density at all times.
 
-.. code:: python
+.. sourcecode:: python
 
    from yt.mods import *
    ts = EnzoTimeSeries('MyData', output_log = 'OutputLog')
@@ -63,7 +63,7 @@ star particles as a function of time, you would write a function that accepts
 ``params`` and ``pf`` and then decorate it with ``analysis_task``.  Here we
 have done so:
 
-.. code:: python 
+.. sourcecode:: python 
 
    @analysis_task(('particle_type',))
    def MassInParticleType(params, pf):
@@ -101,7 +101,7 @@ Tab-completion
 
 I have added tab-completion for field names in ``iyt``.  This means if you do:
 
-.. code:: python
+.. sourcecode:: python
 
    pf = load('DD0040/DD0040')
    dd = pf.h.all_data()

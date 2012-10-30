@@ -26,7 +26,7 @@ absorption.  This means that currently it only works with
 To generate the projected pixels, we have to create a camera and ask it to cast
 rays along each pixel.  This script will do that:
 
-.. code:: python
+.. sourcecode:: python
 
    from yt.mods import *
    import yt.visualization.volume_rendering.camera as camera
@@ -45,7 +45,7 @@ now have to convert this to a regularly gridded set of values, between 0 and
 yt provides a helper function to go from pixel ID to angle (as well as a few
 other things).  You can access this helper function in this manner:
 
-.. code:: python
+.. sourcecode:: python
 
    import yt.utilities.amr_utils as au
    from numpy import pi
@@ -67,7 +67,7 @@ projections.  We'll do the `Mollweide
 we import the appropriate Matplotlib components and plot using the imshow
 command:
 
-.. code:: python
+.. sourcecode:: python
 
    import matplotlib.figure
    import matplotlib.backends.backend_agg

@@ -34,7 +34,7 @@ able to use barriers and collective operations such as allreduce.  To do this,
 we worked in a two-step process.  First we took things like:
 
    
-.. code:: python
+.. sourcecode:: python
 
    def _mpi_allsum(self, data):
    def _mpi_Allsum_double(self, data):
@@ -44,7 +44,7 @@ we worked in a two-step process.  First we took things like:
 
 and packed it into a single function:
 
-.. code:: python
+.. sourcecode:: python
 
    def mpi_allreduce(self, data, dtype=None, op='sum'):
 
@@ -96,7 +96,7 @@ At that point, your new class
 will have access to the mpi calls through the self.comm object.  For
 example, to perform a reduction one would do:
 
-.. code:: python
+.. sourcecode:: python
 
    self.comm.mpi_allreduce(my_data, op='sum')
 

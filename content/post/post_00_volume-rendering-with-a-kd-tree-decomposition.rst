@@ -67,7 +67,7 @@ rendering:
 When instantiating the volume rendering, you need to add the ``kd=True`` and
 ``pf=pf`` keywords.
 
-.. code:: python
+.. sourcecode:: python
 
    vp = pf.h.volume_rendering(L, W, c, (SIZE,SIZE), planck,
             fields=['Temperature', 'RelativeDensity'],
@@ -77,13 +77,13 @@ When instantiating the volume rendering, you need to add the ``kd=True`` and
 Then, instead of ``vp.ray_cast()`` we use either the back-to-front
 partitioning:
 
-.. code:: python
+.. sourcecode:: python
 
    vp.kd_ray_cast(memory_per_process=2**30) # 1GB per processor
 
 or the breadth first:
 
-.. code:: python
+.. sourcecode:: python
 
    vp.kd_breadth_ray_cast(memory_per_process=2**30) # 1GB per processor
 

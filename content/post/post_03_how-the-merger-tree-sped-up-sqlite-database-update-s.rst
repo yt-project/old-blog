@@ -21,7 +21,7 @@ each halo would be modified to reflect the new information using the `SQL
 "UPDATE" <http://sqlite.org/lang_update.html>`_ command. Below is a simplified
 example of how this worked, using random numbers instead of halo data:
 
-.. code:: python
+.. sourcecode:: python
 
    import sqlite3 as sql
    import numpy as np
@@ -73,7 +73,7 @@ example of how this worked, using random numbers instead of halo data:
 
 Running this on my two year old Macbook Pro gives me:
 
-.. code:: none
+.. sourcecode:: none
 
    First insertion took
    1.79e+01 seconds
@@ -105,7 +105,7 @@ added to the second. After all is said and done, the second database will then
 replace the first, and the overall effect will be the same.
 
 
-.. code:: python
+.. sourcecode:: python
 
    import sqlite3 as sql
    
@@ -169,7 +169,7 @@ replace the first, and the overall effect will be the same.
 
 And the timings:
 
-.. code:: none
+.. sourcecode:: none
 
    First insertion took
    1.55e+01 seconds

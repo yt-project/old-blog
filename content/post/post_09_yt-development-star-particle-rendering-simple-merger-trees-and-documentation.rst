@@ -45,7 +45,7 @@ particles, so the following relatively verbose code has to be used to add them
 appropriately to the volume renderer.  This assumed you have created a
 ``camera`` object.
 
-.. code:: python
+.. sourcecode:: python
 
    import yt.utilities.amr_utils as au
    

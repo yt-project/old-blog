@@ -64,7 +64,7 @@ Get Involved: http://yt-project.org/doc/advanced/developing.html
 
 If you can’t wait to get started, install with:
 
-.. code:: bash
+.. sourcecode:: bash
 
    $ wget http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh
    $ bash install_script.sh

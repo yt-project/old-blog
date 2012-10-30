@@ -13,7 +13,7 @@ the 'mapserver' into the development branch.  This is a small, standalone
 webapp that implements a rendered-on-the-fly google maps interface in yt.  To
 run it, just go into a directory that has some data, and run:
 
-.. code:: bash
+.. sourcecode:: bash
 
    yt mapserver DD0054/DD0054
 
@@ -21,7 +21,7 @@ run it, just go into a directory that has some data, and run:
 You can run with ``--help`` to see some options, but what it comes down to is that
 this will slice, but if you want to project, just do ``-p`` like so:
 
-.. code:: bash
+.. sourcecode:: bash
 
    yt mapserver -p DD0054/DD0054
 

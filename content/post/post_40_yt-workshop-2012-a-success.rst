@@ -21,7 +21,7 @@ ZuHone, Brian O'Shea, Jeff Oishi, Stephen Skory, Sam Skillman, and Cameron
 Hummels. All talks have been recorded, and you can clone a unified repository
 of talk slides and worked examples: 
 
-.. code:: bash
+.. sourcecode:: bash
 
    hg clone https://bitbucket.org/yt_analysis/workshop2012/ 
 
