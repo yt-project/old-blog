@@ -1,7 +1,7 @@
 Example HEALpix Contour Rendering Movie
 =======================================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1298290861
 

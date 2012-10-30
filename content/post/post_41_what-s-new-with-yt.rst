@@ -1,7 +1,7 @@
 What's new with yt?
 ===================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1329124221
 

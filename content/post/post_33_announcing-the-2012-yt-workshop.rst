@@ -1,7 +1,7 @@
 Announcing the 2012 yt Workshop
 ===============================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1317680669
 

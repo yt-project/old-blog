@@ -1,7 +1,7 @@
 yt workshop registration is open!
 =================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1322507869
 

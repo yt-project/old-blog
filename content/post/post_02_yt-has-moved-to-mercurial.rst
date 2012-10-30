@@ -1,7 +1,7 @@
 yt has moved to mercurial!
 ==========================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1284033503
 

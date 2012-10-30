@@ -1,7 +1,7 @@
 Workshop in just a week!
 ========================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1326761143
 

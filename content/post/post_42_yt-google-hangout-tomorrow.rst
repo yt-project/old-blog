@@ -1,7 +1,7 @@
 yt Google+ Hangout tomorrow!
 ============================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1335778924
 

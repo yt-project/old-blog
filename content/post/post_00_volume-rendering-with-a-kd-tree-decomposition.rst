@@ -1,7 +1,7 @@
 Volume Rendering with a kD-Tree Decomposition
 =============================================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1273146815
 

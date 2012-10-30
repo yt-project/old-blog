@@ -1,7 +1,7 @@
 kD-Tree Rendering Improvements
 ==============================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1285605960
 

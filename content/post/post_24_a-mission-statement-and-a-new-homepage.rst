@@ -1,7 +1,7 @@
 A mission statement and a new homepage!
 =======================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1309390085
 

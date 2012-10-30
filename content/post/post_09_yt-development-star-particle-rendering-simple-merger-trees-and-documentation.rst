@@ -1,7 +1,7 @@
 yt development: star particle rendering, simple merger trees and documentation
 ==============================================================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1295263620
 

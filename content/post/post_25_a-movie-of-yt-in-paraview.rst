@@ -1,7 +1,7 @@
 A movie of yt in paraview
 =========================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1312854586
 

@@ -1,8 +1,8 @@
-TITLE: Your title
-TITLE_HTML: Your HTML title
-TAGLINE: Your cool tagline
-#POSTS_PER_PAGE: 10
-AUTHOR: Your name
+TITLE: The yt Project Blog
+TITLE_HTML: The yt Project Blog
+TAGLINE: Everything going on with yt
+POSTS_PER_PAGE: 10
+AUTHOR: The yt Project
 #DISQUS: your-disqus-id
 TIMEZONE: UTC
 #POST_EXT: .rst

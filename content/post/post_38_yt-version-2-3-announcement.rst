@@ -1,7 +1,7 @@
 yt Version 2.3 Announcement
 ===========================
 
-.. author: Stephen Skory
+.. author: Stephen Skory <s@skory.us>
 
 .. date: 1323967440
 

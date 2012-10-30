@@ -1,7 +1,7 @@
 yt Development: Quad trees, Tickets and more
 ============================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1307064000
 

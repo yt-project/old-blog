@@ -1,7 +1,7 @@
 Enzo 2.0 and Inline yt
 ======================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1285895136
 

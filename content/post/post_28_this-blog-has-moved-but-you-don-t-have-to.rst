@@ -1,7 +1,7 @@
 This blog has moved -- but you don't have to!
 =============================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1314777530
 

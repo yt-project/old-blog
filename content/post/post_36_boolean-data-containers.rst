@@ -1,7 +1,7 @@
 Boolean Data Containers
 =======================
 
-.. author: Stephen Skory
+.. author: Stephen Skory <s@skory.us>
 
 .. date: 1320843780
 

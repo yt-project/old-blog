@@ -1,7 +1,7 @@
 yt development: Documentation
 =============================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1297078140
 

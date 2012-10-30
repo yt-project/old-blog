@@ -1,7 +1,7 @@
 Quad Tree Projections
 =====================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1284172883
 

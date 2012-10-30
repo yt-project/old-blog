@@ -1,7 +1,7 @@
 Figuring Out Stereo Volume Rendering
 ====================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1274537580
 

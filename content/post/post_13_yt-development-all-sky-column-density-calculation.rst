@@ -1,7 +1,7 @@
 yt development: All-sky column density calculation
 ==================================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1297685580
 

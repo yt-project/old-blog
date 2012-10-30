@@ -1,7 +1,7 @@
 Gmaps-ify your data!
 ====================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1307671728
 

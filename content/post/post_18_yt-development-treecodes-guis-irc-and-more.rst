@@ -1,7 +1,7 @@
 yt Development: Treecodes, GUIs, IRC and more!
 ==============================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1301917254
 

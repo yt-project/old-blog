@@ -1,7 +1,7 @@
 Google+ Page for yt
 ===================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1320830580
 

@@ -1,7 +1,7 @@
 yt development: BitBucket, Task Queues, and Streamlines
 =======================================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1298892900
 

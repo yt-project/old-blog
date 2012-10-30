@@ -1,7 +1,7 @@
 yt development: HEALpix and Contour Tree
 ========================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1298283293
 

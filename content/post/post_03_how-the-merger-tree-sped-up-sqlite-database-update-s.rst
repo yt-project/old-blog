@@ -1,7 +1,7 @@
 How the Merger Tree Sped Up SQLite Database UPDATEs
 ===================================================
 
-.. author: Stephen Skory
+.. author: Stephen Skory <s@skory.us>
 
 .. date: 1284056760
 

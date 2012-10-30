@@ -1,7 +1,7 @@
 Dataset Tracking with yt
 ========================
 
-.. author: Stephen Skory
+.. author: Stephen Skory <s@skory.us>
 
 .. date: 1315842780
 

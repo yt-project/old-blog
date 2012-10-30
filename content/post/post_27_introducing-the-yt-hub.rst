@@ -1,7 +1,7 @@
 Introducing the yt Hub
 ======================
 
-.. author: brittonsmith
+.. author: Britton Smith <brittonsmith@gmail.com>
 
 .. date: 1314210510
 

@@ -1,7 +1,7 @@
 yt workshop 2012: a success!
 ============================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1327935729
 

@@ -1,7 +1,7 @@
 yt 2.4 released!
 ================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1343979820
 

@@ -1,7 +1,7 @@
 We're now the yt Project!
 =========================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1314020396
 

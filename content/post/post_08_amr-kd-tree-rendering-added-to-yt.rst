@@ -1,7 +1,7 @@
 AMR kd-Tree rendering added to yt
 =================================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1289338323
 

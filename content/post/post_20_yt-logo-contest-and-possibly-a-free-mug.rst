@@ -1,7 +1,7 @@
 yt Logo Contest, and possibly a free mug!
 =========================================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1303858017
 

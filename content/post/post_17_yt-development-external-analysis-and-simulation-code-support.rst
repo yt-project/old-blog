@@ -1,7 +1,7 @@
 yt development: External Analysis and Simulation Code Support
 =============================================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1299500229
 

@@ -1,7 +1,7 @@
 New Screencasts
 ===============
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1317144056
 

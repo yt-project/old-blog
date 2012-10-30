@@ -1,7 +1,7 @@
 yt development: 2.0, Cython, and physics module wrapping
 ========================================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1295874650
 

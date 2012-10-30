@@ -1,7 +1,7 @@
 Improvements to Parallelism
 ===========================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1285553216
 

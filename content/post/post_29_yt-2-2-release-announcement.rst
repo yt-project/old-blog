@@ -1,7 +1,7 @@
 yt-2.2 Release Announcement
 ===========================
 
-.. author: Cameron Hummels
+.. author: Cameron Hummels <chummels@gmail.com>
 
 .. date: 1314964560
 

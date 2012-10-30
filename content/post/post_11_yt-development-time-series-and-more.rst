@@ -1,7 +1,7 @@
 yt development: Time series, and more
 =====================================
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1296471190
 

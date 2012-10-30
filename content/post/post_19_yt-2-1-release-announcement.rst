@@ -1,7 +1,7 @@
 yt 2.1 Release Announcement
 ===========================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1302256620
 

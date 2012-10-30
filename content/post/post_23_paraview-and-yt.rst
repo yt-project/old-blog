@@ -1,7 +1,7 @@
 ParaView and yt
 ===============
 
-.. author: Matt
+.. author: Matthew Turk <matthewturk@gmail.com>
 
 .. date: 1308013774
 

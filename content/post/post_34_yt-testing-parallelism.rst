@@ -1,7 +1,7 @@
 yt Testing and Parallelism
 ==========================
 
-.. author: Sam Skillman
+.. author: Sam Skillman <samskillman@gmail.com>
 
 .. date: 1319458462
 
