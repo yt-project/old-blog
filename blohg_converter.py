@@ -40,7 +40,7 @@ class BlohgConverter(nb.ConverterRST):
         lines = ['In[%s]:' % cell.prompt_number, '']
         lines.extend(nb.rst_directive('.. sourcecode:: python', cell.input))
 
-        for output in cell.outputs:
+        for output in nb.coalesce_streams(cell.outputs):
             conv_fn = self.dispatch(output.output_type)
             lines.extend(conv_fn(output))
 
