@@ -9,9 +9,7 @@ Hi all,
 
 Just sharing a video here that showcases some improvements I've made to
 the kD-tree rendering that will be making its way to yt for the 2.0 release.
-
-.. attachment:: render_movie.3gp
-
+You can download it :attachment:`render_movie.3gp|here`
 
 Just to be clear this is showing the rendering of a cosmology simulation with a
 64^3 root grid + 6 AMR levels in real time on 8 processors.  The script is run

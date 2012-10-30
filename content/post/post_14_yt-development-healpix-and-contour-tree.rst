@@ -19,10 +19,9 @@ suspect that a full new algorithm will have to be implemented.  I have
 researching this, and I believe that the best method will require a 'union
 merge' data structure.  Hopefully I will have something to report on this
 shortly.  As of now, the contouring algorithm should be a factor of 10%-50%
-faster than it was a week ago, depending on the dataset characteristics. <br
-/>The idea of selection of astrophysical objects, rather than geometric
-objects, has been on my mind lately, and I committed a first pass at an API for
-this sort of selection.  I hope to have more information about that in the near
-future, but I anticipate those development efforts to ramp up around the end of
-March.
+faster than it was a week ago, depending on the dataset characteristics.  The
+idea of selection of astrophysical objects, rather than geometric objects, has
+been on my mind lately, and I committed a first pass at an API for this sort of
+selection.  I hope to have more information about that in the near future, but
+I anticipate those development efforts to ramp up around the end of March.
 

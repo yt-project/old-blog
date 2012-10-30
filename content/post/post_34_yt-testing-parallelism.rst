@@ -1,5 +1,5 @@
-yt Testing & Parallelism
-========================
+yt Testing and Parallelism
+==========================
 
 .. author: Sam Skillman
 

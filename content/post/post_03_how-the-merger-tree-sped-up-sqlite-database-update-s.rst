@@ -1,5 +1,5 @@
-How the Merger Tree Sped Up SQLite Database "UPDATE"s
-=====================================================
+How the Merger Tree Sped Up SQLite Database UPDATEs
+===================================================
 
 .. author: Stephen Skory
 
@@ -73,7 +73,7 @@ example of how this worked, using random numbers instead of halo data:
 
 Running this on my two year old Macbook Pro gives me:
 
-.. code::
+.. code:: none
 
    First insertion took
    1.79e+01 seconds
@@ -169,7 +169,7 @@ replace the first, and the overall effect will be the same.
 
 And the timings:
 
-.. code::
+.. code:: none
 
    First insertion took
    1.55e+01 seconds

@@ -14,7 +14,7 @@ projections of both 'Density' (requires IO) and 'Ones' (doesn't require IO).
 For the purposes of these tests I have excised any time spent in creating the
 hierarchy and affiliated grid objects.  The results are shown just here:  
 
-.. image-attachment:: output.png
+.. attachment-image:: output.png
 
 One thing I found rather astonishing about this is how poorly the 1D profile
 operates.  It's not incomprehensibly slow, but it operates much slower than the

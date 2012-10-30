@@ -81,7 +81,7 @@ example of a piece of Swiss cheese created from two cubical regions and two
 spheres. The second sphere ``sp2`` wraps around the periodic boundaries and
 impacts the largest cube in more than one place.
 
-.. code::
+.. code:: python
 
    re1 = pf.h.region([0.5]*3, [0.]*3, [1.]*3)
    re2 = pf.h.region([0.5]*3, [0.5]*3, [1.]*3)

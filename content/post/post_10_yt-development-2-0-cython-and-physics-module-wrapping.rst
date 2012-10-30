@@ -1,8 +1,5 @@
 yt development: 2.0, Cython, and physics module wrapping
 ========================================================
-<div class="CodeRay"> <div class="code"><pre>yt/
-yt/data_objects yt/utilities yt/frontends yt/gui yt/visualization
-yt/analysis_modules</pre>
 
 .. author: Matt
 
@@ -24,7 +21,7 @@ entry points for modification, and a faster import time.  The
 all new installations should have this same basic layout.  The new layout looks
 something like this: 
 
-.. code::
+.. code:: none
 
    yt/
    yt/data_objects

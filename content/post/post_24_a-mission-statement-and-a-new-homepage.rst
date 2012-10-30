@@ -22,7 +22,13 @@ which direction it is pointed.  To be honest, as the person who initiated that
 discussion, I was a bit surprised at how far reaching the discussion became.
 The mission statement we converged on is reproduced here, but over time it
 might evolve and be refined. 
+
+Feel free to stop by the IRC channel or the mailing lists if this piques your
+interest and you'd like to chat more.
    
+Mission Statement
+-----------------
+
    The yt project aims to produce an integrated science environment for
    collaboratively asking and answering astrophysical questions. To do so, it will
    encompass the creation of initial conditions, the execution of simulations, and
@@ -34,7 +40,3 @@ might evolve and be refined.
    manifested in participatory development, reproducibility, documented and
    approachable code, a friendly and helpful community of users and developers,
    and Free and Libre Open Source Software.
-   
-Feel free to stop by the IRC channel or the mailing lists if this piques your
-interest and you'd like to chat more.
-
