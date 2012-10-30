@@ -25,5 +25,3 @@ repository on BitBucket and issue a pull reuqest:
 The build integration is provided by `Shining Panda
 <http://shiningpanda.com/>`_ and stored on Amazon's S3.  The styles are based
 on `Twitter Bootstrap <http://twitter.github.com/bootstrap/>`_.
-
-.. attachment-image:: mercurial.png
