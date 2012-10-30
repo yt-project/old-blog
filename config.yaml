@@ -6,3 +6,4 @@ AUTHOR: The yt Project
 #DISQUS: your-disqus-id
 TIMEZONE: UTC
 #POST_EXT: .rst
+FREEZER_BASE_URL=http://blog.yt-project.org/
