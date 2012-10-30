@@ -3,7 +3,7 @@ yt development: External Analysis and Simulation Code Support
 
 .. author: Matt
 
-.. date: 1299500229.0
+.. date: 1299500229
 
 This last week was the first full week on `BitBucket
 <http://hg.enzotools.org/>`_ and so far I think it has been quite successful.

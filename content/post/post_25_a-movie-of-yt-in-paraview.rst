@@ -3,7 +3,7 @@ A movie of yt in paraview
 
 .. author: Matt
 
-.. date: 1312854586.0
+.. date: 1312854586
 
 Jorge posted this video of using yt inside ParaView.  It demonstrated multi-res
 slices, projections, and even volume rendering with an adjustable transfer

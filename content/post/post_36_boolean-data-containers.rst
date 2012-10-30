@@ -3,7 +3,7 @@ Boolean Data Containers
 
 .. author: Stephen Skory
 
-.. date: 1320843780.0
+.. date: 1320843780
 
 A useful new addition to yt are *boolean* data containers. These are hybrid
 data containers that are built by relating already-defined data containers with

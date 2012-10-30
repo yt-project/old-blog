@@ -3,7 +3,7 @@ yt has moved to mercurial!
 
 .. author: Matt
 
-.. date: 1284033503.0
+.. date: 1284033503
 
 For about a year and a half now, most of the unstable development of yt has
 occurred inside a `mercurial <http://mercurial.selenic.com/>`_ repo.  Mercurial

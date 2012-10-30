@@ -3,7 +3,7 @@ Workshop in just a week!
 
 .. author: Matt
 
-.. date: 1326761143.0
+.. date: 1326761143
 
 The first yt workshop is in just about a week.  We've updated the `website
 <http ://yt-project.org/workshop2012>`_ with the current list of talks, along

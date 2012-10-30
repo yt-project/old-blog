@@ -3,7 +3,7 @@ Figuring Out Stereo Volume Rendering
 
 .. author: Matt
 
-.. date: 1274537580.0
+.. date: 1274537580
 
 Last week I was approached by a friend and collaborator to prepare some large
 volume renderings using the software volume renderer in yt.  In the past we've

@@ -3,7 +3,7 @@ New Screencasts
 
 .. author: Matt
 
-.. date: 1317144056.0
+.. date: 1317144056
 
 A few of the yt developers have been experimenting with screencasts to show off
 new features or demonstrate how to do some things.  Sam and I have both

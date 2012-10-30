@@ -3,7 +3,7 @@ How the Merger Tree Sped Up SQLite Database "UPDATE"s
 
 .. author: Stephen Skory
 
-.. date: 1284056760.0
+.. date: 1284056760
 
 The `Parallel Merger Tree
 <http://yt.enzotools.org/doc/extensions/merger_tree.html>`_ in yt, like most of

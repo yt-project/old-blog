@@ -3,7 +3,7 @@ We're now the yt Project!
 
 .. author: Matt
 
-.. date: 1314020396.0
+.. date: 1314020396
 
 This is just a brief blog entry -- other news is on the way soon! -- to let
 everyone know we've updated our domains.  In keeping with the change in focus

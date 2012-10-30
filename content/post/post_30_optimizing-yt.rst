@@ -3,7 +3,7 @@ Optimizing yt
 
 .. author: Matt
 
-.. date: 1315661992.0
+.. date: 1315661992
 
 This last week, following the release of version 2.2 of yt, I spent a bit of
 time looking at speed improvements.  There were several places that the code

@@ -3,7 +3,7 @@ What's new with yt?
 
 .. author: Matt
 
-.. date: 1329124221.0
+.. date: 1329124221
 
 Now that the post-workshop preparations and work have settled down, I thought
 it might be interesting to share some of the developments going on with yt.

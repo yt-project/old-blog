@@ -3,7 +3,7 @@ kD-Tree Rendering Improvements
 
 .. author: Sam Skillman
 
-.. date: 1285605960.0
+.. date: 1285605960
 
 Hi all,
 

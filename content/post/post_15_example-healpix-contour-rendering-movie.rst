@@ -3,7 +3,7 @@ Example HEALpix Contour Rendering Movie
 
 .. author: Sam Skillman
 
-.. date: 1298290861.0
+.. date: 1298290861
 
 In response to Matt's `post <http://blog.enzotools.org/yt-development-healpix-
 and-contour-tree>`_ on the HEALpix rendering update, I thought it would be worth

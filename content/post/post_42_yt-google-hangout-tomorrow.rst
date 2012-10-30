@@ -3,7 +3,7 @@ yt Google+ Hangout tomorrow!
 
 .. author: Matt
 
-.. date: 1335778924.0
+.. date: 1335778924
 
 Tomorrow we're going to try something new -- Google Hangouts! If you'd like
 help with something, to share some feedback, or just to say hi to other

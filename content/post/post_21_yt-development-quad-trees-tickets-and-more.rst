@@ -3,7 +3,7 @@ yt Development: Quad trees, Tickets and more
 
 .. author: Matt
 
-.. date: 1307064000.0
+.. date: 1307064000
 
 It's been a while since the last Development post &mdash; but in that
 time, some pretty fun things have been going on.  These are some of the smaller

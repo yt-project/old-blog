@@ -3,7 +3,7 @@ Announcing the 2012 yt Workshop
 
 .. author: Matt
 
-.. date: 1317680669.0
+.. date: 1317680669
 
 I'm pleased to announce the 2012 yt Workshop at the FLASH Center in Chicago,
 January 24-26.

@@ -3,7 +3,7 @@ yt Testing & Parallelism
 
 .. author: Sam Skillman
 
-.. date: 1319458462.0
+.. date: 1319458462
 
 A few of us worked this past week on a couple yt projects and made what we
 think is significant progress.  Two of the items we focused on

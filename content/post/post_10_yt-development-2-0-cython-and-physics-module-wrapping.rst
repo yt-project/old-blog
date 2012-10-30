@@ -6,7 +6,7 @@ yt/analysis_modules</pre>
 
 .. author: Matt
 
-.. date: 1295874650.0
+.. date: 1295874650
 
 This is the second blog entry in the weekly series, with some updates on what
 took place last week with respect to yt development.  One of the more exciting

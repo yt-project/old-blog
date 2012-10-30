@@ -3,7 +3,7 @@ Improvements to Parallelism
 
 .. author: Matt
 
-.. date: 1285553216.0
+.. date: 1285553216
 
 The last few days I've spent some time looking at how parallelism in yt
 performs.  I conducted two different tests, both of which operated on the 512^3,

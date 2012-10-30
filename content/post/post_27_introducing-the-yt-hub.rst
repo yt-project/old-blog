@@ -3,7 +3,7 @@ Introducing the yt Hub
 
 .. author: brittonsmith
 
-.. date: 1314210510.0
+.. date: 1314210510
 
 I am very excited to announce the yt Hub: `http://hub.yt-project.org/
 <http://hub.yt-project.org/>`_.

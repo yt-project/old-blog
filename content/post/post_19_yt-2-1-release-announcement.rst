@@ -3,7 +3,7 @@ yt 2.1 Release Announcement
 
 .. author: Sam Skillman
 
-.. date: 1302256620.0
+.. date: 1302256620
 
 We are proud to announce the release of yt version 2.1.  This release includes
 several new features, bug fixes, and numerous improvements to the code base and

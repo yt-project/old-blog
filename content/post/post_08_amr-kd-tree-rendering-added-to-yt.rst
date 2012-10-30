@@ -3,7 +3,7 @@ AMR kd-Tree rendering added to yt
 
 .. author: Sam Skillman
 
-.. date: 1289338323.0
+.. date: 1289338323
 
 After a significant amount of development and restructuring, I have added the
 AMR kd-Tree rendering framework to yt.  There are several posts on this blog

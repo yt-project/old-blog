@@ -3,7 +3,7 @@ yt development: Documentation
 
 .. author: Matt
 
-.. date: 1297078140.0
+.. date: 1297078140
 
 As a result of progress in my scientific goals, and the application of recent
 yt developments to them, I did not make many changes or developments in yt this

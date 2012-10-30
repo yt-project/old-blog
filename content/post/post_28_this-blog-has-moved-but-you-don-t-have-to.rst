@@ -3,7 +3,7 @@ This blog has moved -- but you don't have to!
 
 .. author: Matt
 
-.. date: 1314777530.0
+.. date: 1314777530
 
 In keeping with the `project rename
 <http://blog.yt-project.org/were-now-the-yt- project>`_ we've moved this blog

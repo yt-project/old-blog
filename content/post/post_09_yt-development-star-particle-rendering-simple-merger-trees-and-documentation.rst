@@ -3,7 +3,7 @@ yt development: star particle rendering, simple merger trees and documentation
 
 .. author: Matt
 
-.. date: 1295263620.0
+.. date: 1295263620
 
 This is the first of a new series of "what's up with yt" blog posts I'm going
 to be writing.  By keeping this log, I hope that maybe some things that would

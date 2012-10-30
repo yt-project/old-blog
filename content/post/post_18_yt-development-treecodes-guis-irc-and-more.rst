@@ -3,7 +3,7 @@ yt Development: Treecodes, GUIs, IRC and more!
 
 .. author: Matt
 
-.. date: 1301917254.0
+.. date: 1301917254
 
 It's been nearly a month since the last yt development post; in that time,
 there's been quite a bit of development in a couple different areas.  This

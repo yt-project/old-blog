@@ -3,7 +3,7 @@ A mission statement and a new homepage!
 
 .. author: Matt
 
-.. date: 1309390085.0
+.. date: 1309390085
 
 In case you haven't visited our front page lately, the yt homepage has been
 `redesigned <http://yt.enzotools.org/>`_!  The old homepage was nice and

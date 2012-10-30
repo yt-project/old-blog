@@ -3,7 +3,7 @@ Dataset Tracking with yt
 
 .. author: Stephen Skory
 
-.. date: 1315842780.0
+.. date: 1315842780
 
 In this post I'd like to discuss a bit of work in progress to highlight some
 exciting new features that we hope to have working in yt sometime soon.

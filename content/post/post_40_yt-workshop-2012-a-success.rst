@@ -3,7 +3,7 @@ yt workshop 2012: a success!
 
 .. author: Matt
 
-.. date: 1327935729.0
+.. date: 1327935729
 
 The yt workshop last week in Chicago ( http://yt-project.org/workshop2012/ ) was an
 enormous success. On behalf of the organizing and technical committees,

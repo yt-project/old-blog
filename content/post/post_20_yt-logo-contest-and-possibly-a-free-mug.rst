@@ -3,7 +3,7 @@ yt Logo Contest, and possibly a free mug!
 
 .. author: Sam Skillman
 
-.. date: 1303858017.0
+.. date: 1303858017
 
 yt is in need of an awesome new logo, which is why we are announcing the first
 ever new logo contest!  So here's the deal: 

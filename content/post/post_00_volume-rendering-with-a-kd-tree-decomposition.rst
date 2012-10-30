@@ -3,7 +3,7 @@ Volume Rendering with a kD-Tree Decomposition
 
 .. author: Sam Skillman
 
-.. date: 1273146815.0
+.. date: 1273146815
 
 Hi all, 
 

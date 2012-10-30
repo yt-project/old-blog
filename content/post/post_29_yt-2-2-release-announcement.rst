@@ -3,7 +3,7 @@ yt-2.2 Release Announcement
 
 .. author: Cameron Hummels
 
-.. date: 1314964560.0
+.. date: 1314964560
 
 
 (Please feel encouraged to forward this message to any other interested parties.)

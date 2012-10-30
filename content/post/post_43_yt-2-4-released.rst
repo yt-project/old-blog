@@ -3,7 +3,7 @@ yt 2.4 released!
 
 .. author: Matt
 
-.. date: 1343979820.0
+.. date: 1343979820
 
 We’re proud to announce the release of version 2.4 of the yt Project,
 http://yt-project.org/ .  The new version includes many new features,

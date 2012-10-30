@@ -3,7 +3,7 @@ ParaView and yt
 
 .. author: Matt
 
-.. date: 1308013774.0
+.. date: 1308013774
 
 Thanks to some awesome work by developers at Kitware, yt can now be called from
 within ParaView!

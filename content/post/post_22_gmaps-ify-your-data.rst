@@ -3,7 +3,7 @@ Gmaps-ify your data!
 
 .. author: Matt
 
-.. date: 1307671728.0
+.. date: 1307671728
 
 A couple of us have been working on a comprehensive notebook web GUI for yt.
 It's not ready yet.

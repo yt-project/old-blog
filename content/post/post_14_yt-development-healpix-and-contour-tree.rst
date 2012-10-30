@@ -3,7 +3,7 @@ yt development: HEALpix and Contour Tree
 
 .. author: Matt
 
-.. date: 1298283293.0
+.. date: 1298283293
 
 This week there was not very much yt development.  However, a few notes may be
 of interest.  SamS has updated the HEALPix camera to support ordered

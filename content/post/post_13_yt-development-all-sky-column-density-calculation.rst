@@ -3,7 +3,7 @@ yt development: All-sky column density calculation
 
 .. author: Matt
 
-.. date: 1297685580.0
+.. date: 1297685580
 
 This week I added the ability to calculate all-sky column densities.  This
 functionality uses `HEALpix <http://healpix.jpl.nasa.gov/>`_ to calculate

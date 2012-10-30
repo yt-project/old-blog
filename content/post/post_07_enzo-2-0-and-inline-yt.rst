@@ -3,7 +3,7 @@ Enzo 2.0 and Inline yt
 
 .. author: Matt
 
-.. date: 1285895136.0
+.. date: 1285895136
 
 Enzo 2.0 has just been released to its new `Google Code website
 <http://enzo.googlecode.com/>`_.  This release features preliminary support for

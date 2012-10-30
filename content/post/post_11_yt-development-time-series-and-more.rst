@@ -3,7 +3,7 @@ yt development: Time series, and more
 
 .. author: Matt
 
-.. date: 1296471190.0
+.. date: 1296471190
 
 Not much yt development went on in the last week; I spent some time working
 with Enzo and driving forward simulation goals, which resulted in some

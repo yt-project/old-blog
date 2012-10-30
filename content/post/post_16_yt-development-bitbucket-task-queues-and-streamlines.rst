@@ -3,7 +3,7 @@ yt development: BitBucket, Task Queues, and Streamlines
 
 .. author: Matt
 
-.. date: 1298892900.0
+.. date: 1298892900
 
 The major changes this week came mostly in the form of administrative shifts.
 However, SamS did some great work I'm going to hint at (he'll post

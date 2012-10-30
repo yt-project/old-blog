@@ -3,7 +3,7 @@ Quad Tree Projections
 
 .. author: Matt
 
-.. date: 1284172883.0
+.. date: 1284172883
 
 The current method for projections in yt is based on a home-grown algorithm for
 calculating grid overlap and joining points.  I've always been pretty proud of
