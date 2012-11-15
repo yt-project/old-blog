@@ -49,7 +49,7 @@ data (SPH, unstructured mesh), and to remove many of the "Enzo-isms" that
 populate the code base.  This brings with it a lot of work, but also a lot of
 opportunity.
 
-.. note:: If you have ideas, concerns or comments, email yt-dev!
+If you have ideas, concerns or comments, email yt-dev!
 
 What's Going In To 3.0?
 -----------------------
