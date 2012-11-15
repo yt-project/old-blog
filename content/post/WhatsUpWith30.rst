@@ -1,6 +1,26 @@
 What's Up With yt 3.0?
 ======================
 
+This is a long blog post!  The short of it is:
+
+ * If you're using Enzo or FLASH, you can probably do most of what you want to
+   do with 3.0.  But there are probably bugs, and you can't volume render yet.
+   But every bug or missing feature you find is a useful piece of information
+   that can help speed up development.
+ * If you're using RAMSES, 3.0 will be a vast improvement!
+ * Boxlib codes will need a small amount of updating to get working in 3.0
+ * SPH is coming!
+
+As with all of yt, 3.0 is being developed completely in the open.  We're
+testing using JIRA at http://yt-project.atlassian.net/ for tracking progress.
+The main development repository is at https://bitbucket.org/yt_analysis/yt-3.0
+and discussions have been ongoing on the yt-dev mailing list.  Down below you
+can find some contributor ideas and information!
+
+
+Why 3.0?
+--------
+
 The very first pieces of yt to be written are now a bit over six years old.
 When it started, it was a very simple Python wrapper around pyHDF, designed to
 make slices, then export those slices to ASCII where they were plotted by a
@@ -28,12 +48,6 @@ yt 3.0 is designed to allow support for non-cartesian coordinates, non-grid
 data (SPH, unstructured mesh), and to remove many of the "Enzo-isms" that
 populate the code base.  This brings with it a lot of work, but also a lot of
 opportunity.
-
-As with all of yt, 3.0 is being developed completely in the open.  We're
-testing using JIRA at http://yt-project.atlassian.net/ for tracking progress.
-The main development repository is at https://bitbucket.org/yt_analysis/yt-3.0
-and discussions have been ongoing on the yt-dev mailing list.  Down below you
-can find some contributor ideas and information!
 
 .. note:: If you have ideas, concerns or comments, email yt-dev!
 
@@ -144,10 +158,10 @@ ambitious and uses the package SymPy ( http://sympy.org ) for manipulating
 symbols and units, and it seems ideal for our use case.  Fields will now carry
 with them units, and we will ensure that they are correctly propagated.
 
-Related to this is that how to access parameters.  In the past, parameter files
+Related to this is how to access parameters.  In the past, parameter files
 (``pf``) have been overloaded to provide dict-like access to parameters.  This
-was degenerate with accessing units and conversion factors.  In 3.0, you
-will need to explicitly access ``pf.parameters`` to access them.
+was degenerate with accessing units and conversion factors.  In 3.0, you will
+need to explicitly access ``pf.parameters`` to access them.
 
 Multi-Fluid and Multi-Particle Support
 ++++++++++++++++++++++++++++++++++++++
@@ -167,7 +181,7 @@ uses) also have support for multiple fluids.  There's currently no clear way to
 address different types of fluid, and this suffers from the same issue the
 particles do.
 
-In 3.0, fields are now specific by two characteristics, both of which have a
+In 3.0, fields are now specified by two characteristics, both of which have a
 default, which means you don't have to change anything if you don't have a
 multi-fluid or multi-particle simulation.  But if you do, you can now access
 particles and fluids like this::
