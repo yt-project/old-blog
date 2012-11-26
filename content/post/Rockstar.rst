@@ -57,6 +57,7 @@ identifies the small in-falling subhalos that HOP doesn't. This is not
 surprising because HOP is not designed to detect substructure.
 
 HOP:
+
 .. attachment-image:: HOP_halo0002_0.png
    :width: 1605
    :height: 1500
@@ -65,6 +66,7 @@ HOP:
    :align: center
 
 Rockstar:
+
 .. attachment-image:: ROCK_halo0006_0.png
    :width: 1605
    :height: 1500
