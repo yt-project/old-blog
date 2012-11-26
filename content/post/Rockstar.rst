@@ -7,6 +7,7 @@ Rockstar was written primarily by Peter Behroozi and has a main website
 `here <http://code.google.com/p/rockstar/>`_.
 Linked there is the source and the most current edition of the method paper
 which includes a timing and scaling study.
+
 Rockstar is a six dimensional halo finder, meaning that it considers both
 particle position and momentum when locating dark matter halos.
 It is also capable of locating bound substructure in halos and producing
@@ -16,7 +17,8 @@ handle simulations with varying particle mass.
 This means that in simulations
 that include star particles, the star particles must be excluded for the
 purposes of halo finding.
-Also, Rockstar cannot analyze "zoom-in" or "nested" simulations.
+Also, Rockstar cannot analyze "zoom-in" or "nested" simulations with
+various values of dark matter particle mass.
 
 Here is a brief list of the main improvements:
 
@@ -37,7 +39,8 @@ Here is a brief list of the main improvements:
     to disk.
 
 The full documentation on how to run Rockstar is available
-`here <http://yt-project.org/doc/analysis_modules/running_halofinder.html#rockstar-halo-finding>`_.
+`in the yt documentation
+<http://yt-project.org/doc/analysis_modules/running_halofinder.html#rockstar-halo-finding>`_.
 
 Examples of Substructure Location
 ---------------------------------
@@ -61,7 +64,7 @@ HOP:
 .. attachment-image:: HOP_halo0002_0.png
    :width: 1605
    :height: 1500
-   :scale: 33 %
+   :scale: 20 %
    :alt: HOP Output
    :align: center
 
@@ -70,9 +73,9 @@ Rockstar:
 .. attachment-image:: ROCK_halo0006_0.png
    :width: 1605
    :height: 1500
-   :scale: 33 %
+   :scale: 20 %
    :alt: Rockstar Output
    :align: center
 
-In the Rockstar image, the halos on the periphery are not encircled due to the
+Note that In the Rockstar image, the halos on the periphery are not encircled due to the
 way the image was prepared.
