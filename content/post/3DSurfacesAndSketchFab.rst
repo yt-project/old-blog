@@ -1,4 +1,4 @@
-3D Surfaces and SketchFab
+3D Surfaces and Sketchfab
 =========================
 
 Surfaces
@@ -56,29 +56,29 @@ If you want to export this to a `PLY file
 <http://en.wikipedia.org/wiki/PLY_(file_format)>`_ you can call the routine
 ``export_ply``, which will write to a file and optionally sample a field at
 every face or vertex, outputting a color value to the file as well.  This file
-can then be viewed in MeshLab, Blender or on the website `SketchFab.com
-<SketchFab.com>`_.  But if you want to view it on SketchFab, there's an even
+can then be viewed in MeshLab, Blender or on the website `Sketchfab.com
+<Sketchfab.com>`_.  But if you want to view it on Sketchfab, there's an even
 easier way!
 
-Exporting to SketchFab
+Exporting to Sketchfab
 ----------------------
 
-`SketchFab <http://sketchfab.com>`_ is a website that uses WebGL, a relatively
+`Sketchfab <http://sketchfab.com>`_ is a website that uses WebGL, a relatively
 new technology for displaying 3D graphics in any browser.  It's very fast and
 typically requires no plugins.  Plus, it means that you can share data with
 anyone and they can view it immersively without having to download the data or
-any software packages!  SketchFab provides a free tier for up to 10 models, and
+any software packages!  Sketchfab provides a free tier for up to 10 models, and
 these models can be embedded in websites.
 
-There are lots of reasons to want to export to SketchFab.  For instance, if
+There are lots of reasons to want to export to Sketchfab.  For instance, if
 you're looking at a galaxy formation simulation and you publish a paper, you
 can include a link to the model in that paper (or in the arXiv listing) so that
 people can explore and see what the data looks like.  You can also embed a
-model in a website with other supplemental data, or you can use SketchFab to
+model in a website with other supplemental data, or you can use Sketchfab to
 discuss morphological properties of a dataset with collaborators.  It's also
 just plain cool.
 
-The ``AMRSurface`` object includes a method to upload directly to SketchFab,
+The ``AMRSurface`` object includes a method to upload directly to Sketchfab,
 but it requires that you get an API key first.  You can get this API key by
 creating an account and then going to your "dashboard," where it will be listed
 on the right hand side.  Once you've obtained it, put it into your
@@ -110,11 +110,11 @@ Now you can run a script like this:
        bounds = bounds
    )
 
-and yt will extract a surface, convert to a format that SketchFab.com
+and yt will extract a surface, convert to a format that Sketchfab.com
 understands (PLY, in a zip file) and then upload it using your API key.  For
 this demo, I've used data kindly provided by Ryan Joung from a simulation of
 galaxy formation.  Here's what my newly-uploaded model looks like, using the
-embed code from SketchFab:
+embed code from Sketchfab:
 
 .. raw:: html
 
@@ -122,11 +122,11 @@ embed code from SketchFab:
    webkitallowfullscreen="true" mozallowfullscreen="true"
    src="http://skfb.ly/l4jh2edcba?autostart=0&transparent=0&autospin=0&controls=1&watermark=1"></iframe>
 
-As a note, SketchFab has a maximum model size of 50MB for the free account.
+As a note, Sketchfab has a maximum model size of 50MB for the free account.
 50MB is pretty hefty, though, so it shouldn't be a problem for most needs.
-We're working on a way to optionally upload links to the SketchFab models on
+We're working on a way to optionally upload links to the Sketchfab models on
 the `yt Hub <https://hub.yt-project.org/>`_, but for now, if you want to share
 a cool model we'd love to see it!
 
-Thanks to SketchFab for such a cool service, and for helping us out along the
+Thanks to Sketchfab for such a cool service, and for helping us out along the
 way with their API.
