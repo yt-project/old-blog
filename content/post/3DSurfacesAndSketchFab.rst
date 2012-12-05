@@ -91,7 +91,7 @@ Now you can run a script like this:
 .. code-block:: python
 
    from yt.mods import *
-   pf = load("redshift0058", file_style="%s.grid.cpu%%04i")
+   pf = load("redshift0058")
    dd = pf.h.sphere("max", (200, "kpc"))
    rho = 5e-27
 
