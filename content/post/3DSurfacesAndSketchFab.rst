@@ -56,7 +56,7 @@ If you want to export this to a `PLY file
 <http://en.wikipedia.org/wiki/PLY_(file_format)>`_ you can call the routine
 ``export_ply``, which will write to a file and optionally sample a field at
 every face or vertex, outputting a color value to the file as well.  This file
-can then be viewed in MeshLab, Blender or on the website `SketchFab
+can then be viewed in MeshLab, Blender or on the website `SketchFab.com
 <SketchFab.com>`_.  But if you want to view it on SketchFab, there's an even
 easier way!
 
