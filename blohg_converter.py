@@ -8,26 +8,7 @@ import copy
 import nbconvert as nb
 import argparse
 import shutil
-import re
 from yt.utilities.minimal_representation import MinimalNotebook
-
-def clean_filename(filename):
-    """
-    Remove non-alphanumeric characters from filenames.
-
-    Parameters
-    ----------
-    filename : str
-        The filename to be sanitized.
-
-    Returns
-    -------
-    clean : str
-        A sanitized filename that contains only alphanumeric
-        characters and underscores.
-    """
-    filename = re.sub(r'[^a-zA-Z0-9_]', '_', filename)
-    return filename
 
 class BlohgConverter(nb.ConverterRST):
 
