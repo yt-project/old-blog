@@ -2,10 +2,10 @@ Particle Generators
 ===================
 
 
-`Notebook Download <https://hub.yt-project.org/go/5o6k23>`_
+`Notebook Download <https://hub.yt-project.org/go/i483hp>`_
 
 
-In[12]:
+In[1]:
 
 .. sourcecode:: python
 
@@ -35,7 +35,7 @@ In[12]:
     def add_indices(npart, start_num) :
         return np.arange((npart)) + start_num
 
-In[13]:
+In[2]:
 
 .. sourcecode:: python
 
@@ -46,19 +46,19 @@ In[13]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:14:20,032 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:14:20,033 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:14:20,033 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:14:20,034 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:14:20,035 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:14:20,035 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:14:20,035 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:14:20,036 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:14:20,037 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:14:20,037 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:15,381 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:15,381 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:15,382 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:15,383 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:15,383 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:15,384 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:15,384 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:15,385 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:15,385 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:15,386 Parameters: cosmological_simulation   = 0.0
 
 
-In[14]:
+In[3]:
 
 .. sourcecode:: python
 
@@ -77,14 +77,14 @@ In[14]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:14:20,048 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 01:14:20,051 Adding particle_position_z to list of fields
-    yt : [INFO     ] 2012-12-13 01:14:20,051 Adding particle_index to list of fields
-    yt : [INFO     ] 2012-12-13 01:14:20,052 Adding particle_position_x to list of fields
-    yt : [INFO     ] 2012-12-13 01:14:20,052 Adding particle_position_y to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:15,397 Adding Density to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:15,400 Adding particle_position_z to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:15,401 Adding particle_index to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:15,401 Adding particle_position_x to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:15,402 Adding particle_position_y to list of fields
 
 
-In[15]:
+In[4]:
 
 .. sourcecode:: python
 
@@ -95,20 +95,20 @@ In[15]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:14:20,075 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:20,075 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:20,076 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:14:20,084 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:20,084 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:20,087 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:14:20,097 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:14:20,896 Getting field particle_position_x from 1
-    yt : [INFO     ] 2012-12-13 01:14:20,921 Getting field particle_position_y from 1
+    yt : [INFO     ] 2012-12-13 02:55:15,433 xlim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:15,433 ylim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:15,434 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:15,442 xlim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:15,443 ylim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:15,445 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:15,455 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:16,493 Getting field particle_position_x from 1
+    yt : [INFO     ] 2012-12-13 02:55:16,517 Getting field particle_position_y from 1
 
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_00.png
 
-In[16]:
+In[5]:
 
 .. sourcecode:: python
 
@@ -122,10 +122,10 @@ In[16]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:14:21,657 Adding particle_gas_density to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:17,222 Adding particle_gas_density to list of fields
 
 
-In[17]:
+In[6]:
 
 .. sourcecode:: python
 
@@ -136,20 +136,20 @@ In[17]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:14:21,676 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:21,677 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:21,677 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:14:21,686 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:21,686 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:14:21,688 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:14:21,697 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:14:22,534 Getting field particle_position_x from 1
-    yt : [INFO     ] 2012-12-13 01:14:22,559 Getting field particle_position_y from 1
+    yt : [INFO     ] 2012-12-13 02:55:17,244 xlim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:17,245 ylim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:17,245 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:17,254 xlim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:17,254 ylim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:17,257 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:17,267 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:18,032 Getting field particle_position_x from 1
+    yt : [INFO     ] 2012-12-13 02:55:18,057 Getting field particle_position_y from 1
 
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_01.png
 
-In[18]:
+In[7]:
 
 .. sourcecode:: python
 
@@ -158,7 +158,7 @@ In[18]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:14:51,545 Getting field particle_index from 1
+    yt : [INFO     ] 2012-12-13 02:55:18,817 Getting field particle_index from 1
 
 
 .. parsed-literal::
@@ -166,7 +166,7 @@ In[18]:
     All indices unique =  True
 
 
-In[19]:
+In[8]:
 
 .. sourcecode:: python
 
@@ -176,50 +176,50 @@ In[19]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:15:12,089 Refining another level.  Current max level: 0
-    yt : [INFO     ] 2012-12-13 01:15:13,307 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,308 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:15:13,308 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:15:13,309 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:15:13,310 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,310 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,311 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:15:13,311 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:15:13,312 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:15:13,313 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,315 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:13,316 Refining another level.  Current max level: 1
-    yt : [INFO     ] 2012-12-13 01:15:13,919 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,920 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:15:13,920 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:15:13,921 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:15:13,922 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,922 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,923 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:15:13,923 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:15:13,924 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:15:13,925 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:13,927 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:13,928 Refining another level.  Current max level: 2
-    yt : [INFO     ] 2012-12-13 01:15:14,521 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:14,521 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:15:14,522 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:15:14,523 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:15:14,524 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:14,524 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:14,524 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 01:15:14,525 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 01:15:14,526 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 01:15:14,526 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 01:15:14,539 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:14,543 Adding particle_position_z to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:14,544 Adding particle_position_x to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:14,544 Adding particle_position_y to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:14,545 Adding particle_index to list of fields
-    yt : [INFO     ] 2012-12-13 01:15:14,545 Adding particle_gas_density to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:18,824 Refining another level.  Current max level: 0
+    yt : [INFO     ] 2012-12-13 02:55:20,011 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,012 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:20,012 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:20,013 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:20,014 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,014 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,015 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:20,015 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:20,016 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:20,016 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,018 Adding Density to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:20,019 Refining another level.  Current max level: 1
+    yt : [INFO     ] 2012-12-13 02:55:20,583 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,584 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:20,584 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:20,585 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:20,586 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,586 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,587 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:20,587 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:20,588 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:20,588 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:20,590 Adding Density to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:20,591 Refining another level.  Current max level: 2
+    yt : [INFO     ] 2012-12-13 02:55:21,147 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:21,148 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:21,148 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:21,149 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:21,150 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:21,150 Parameters: current_time              = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:21,150 Parameters: domain_dimensions         = [128 128 128]
+    yt : [INFO     ] 2012-12-13 02:55:21,151 Parameters: domain_left_edge          = [ 0.  0.  0.]
+    yt : [INFO     ] 2012-12-13 02:55:21,151 Parameters: domain_right_edge         = [ 1.  1.  1.]
+    yt : [INFO     ] 2012-12-13 02:55:21,152 Parameters: cosmological_simulation   = 0.0
+    yt : [INFO     ] 2012-12-13 02:55:21,165 Adding Density to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:21,169 Adding particle_position_z to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:21,170 Adding particle_position_x to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:21,170 Adding particle_position_y to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:21,171 Adding particle_index to list of fields
+    yt : [INFO     ] 2012-12-13 02:55:21,171 Adding particle_gas_density to list of fields
 
 
-In[20]:
+In[9]:
 
 .. sourcecode:: python
 
@@ -234,19 +234,19 @@ In[20]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:15:31,256 Getting field x from 3
-    yt : [INFO     ] 2012-12-13 01:15:31,740 Getting field Density from 3
-    yt : [INFO     ] 2012-12-13 01:15:31,871 Getting field dx from 3
-    yt : [INFO     ] 2012-12-13 01:15:32,012 Getting field dy from 3
-    yt : [INFO     ] 2012-12-13 01:15:32,186 Getting field dz from 3
-    yt : [INFO     ] 2012-12-13 01:15:32,393 Getting field dx from 3
-    yt : [INFO     ] 2012-12-13 01:15:32,571 Getting field y from 3
-    yt : [INFO     ] 2012-12-13 01:15:32,694 Getting field dy from 3
-    yt : [INFO     ] 2012-12-13 01:15:32,879 Getting field z from 3
-    yt : [INFO     ] 2012-12-13 01:15:33,009 Getting field dz from 3
+    yt : [INFO     ] 2012-12-13 02:55:21,239 Getting field x from 3
+    yt : [INFO     ] 2012-12-13 02:55:21,689 Getting field Density from 3
+    yt : [INFO     ] 2012-12-13 02:55:21,817 Getting field dx from 3
+    yt : [INFO     ] 2012-12-13 02:55:21,954 Getting field dy from 3
+    yt : [INFO     ] 2012-12-13 02:55:22,110 Getting field dz from 3
+    yt : [INFO     ] 2012-12-13 02:55:22,296 Getting field dx from 3
+    yt : [INFO     ] 2012-12-13 02:55:22,472 Getting field y from 3
+    yt : [INFO     ] 2012-12-13 02:55:22,594 Getting field dy from 3
+    yt : [INFO     ] 2012-12-13 02:55:22,777 Getting field z from 3
+    yt : [INFO     ] 2012-12-13 02:55:22,904 Getting field dz from 3
 
 
-In[21]:
+In[10]:
 
 .. sourcecode:: python
 
@@ -260,20 +260,20 @@ In[21]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 01:15:51,190 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:15:51,191 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:15:51,191 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:15:51,200 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:15:51,211 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:15:51,211 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 01:15:51,214 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:15:51,222 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:15:51,234 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:15:51,242 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 01:15:54,010 Getting field particle_position_x from 3
-    yt : [INFO     ] 2012-12-13 01:15:54,138 Getting field particle_position_y from 3
-    yt : [INFO     ] 2012-12-13 01:15:54,504 Getting field particle_position_x from 3
-    yt : [INFO     ] 2012-12-13 01:15:54,627 Getting field particle_position_y from 3
+    yt : [INFO     ] 2012-12-13 02:55:24,319 xlim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:24,319 ylim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:24,320 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:24,328 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:24,339 xlim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:24,340 ylim = 0.000000 1.000000
+    yt : [INFO     ] 2012-12-13 02:55:24,342 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:24,351 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:24,362 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:24,371 Making a fixed resolution buffer of (Density) 800 by 800
+    yt : [INFO     ] 2012-12-13 02:55:27,080 Getting field particle_position_x from 3
+    yt : [INFO     ] 2012-12-13 02:55:27,206 Getting field particle_position_y from 3
+    yt : [INFO     ] 2012-12-13 02:55:27,572 Getting field particle_position_x from 3
+    yt : [INFO     ] 2012-12-13 02:55:27,696 Getting field particle_position_y from 3
 
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_02.png
