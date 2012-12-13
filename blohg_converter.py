@@ -16,7 +16,6 @@ class BlohgConverter(nb.ConverterRST):
         self.infile = infile
         self.infile_dir, infile_root = os.path.split(infile)
         if post_name is None: post_name = infile_root
-        self.clean_name = clean_filename(infile_root)
         self.post_name = post_name
         infile_root = os.path.splitext(infile_root)[0]
         sanitized_root = infile_root.replace(" ", "_")
