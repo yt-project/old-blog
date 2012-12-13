@@ -4,7 +4,10 @@ Particle Generators
 
 `Notebook Download <https://hub.yt-project.org/go/i483hp>`_
 
+Generating particle initial conditions is now possible in yt. The following shows how to generate particle fields from pre-defined particle lists, lattice distributions, and distributions based on density fields. 
 
+First, let's define a grid field that is mapped from a particle-based density field, and a function to assign indices to particles:
+ 
 In[1]:
 
 .. sourcecode:: python
@@ -35,6 +38,8 @@ In[1]:
     def add_indices(npart, start_num) :
         return np.arange((npart)) + start_num
 
+Next, we'll set up a uniform grid with some random data:
+
 In[2]:
 
 .. sourcecode:: python
@@ -57,6 +62,7 @@ In[2]:
     yt : [INFO     ] 2012-12-13 02:55:15,385 Parameters: domain_right_edge         = [ 1.  1.  1.]
     yt : [INFO     ] 2012-12-13 02:55:15,386 Parameters: cosmological_simulation   = 0.0
 
+Here, we define a particle field list, and then assign random positions to the particles in one corner of the grid. We generate the particles, assign the indices, and then apply them to the grid. By default, indices are assigned using numpy.arange. 
 
 In[3]:
 
@@ -83,6 +89,7 @@ In[3]:
     yt : [INFO     ] 2012-12-13 02:55:15,401 Adding particle_position_x to list of fields
     yt : [INFO     ] 2012-12-13 02:55:15,402 Adding particle_position_y to list of fields
 
+Plotting this up:
 
 In[4]:
 
@@ -108,6 +115,8 @@ In[4]:
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_00.png
 
+Now let's try adding a lattice-based particle distribution. Let's choose ten particles on a side, and place them in a small region away from the random particles. We'll use the special add_indices function we defined earlier to assign indices that are all different from the ones the already existing particles have. 
+
 In[5]:
 
 .. sourcecode:: python
@@ -124,6 +133,7 @@ In[5]:
 
     yt : [INFO     ] 2012-12-13 02:55:17,222 Adding particle_gas_density to list of fields
 
+We now have both sets of particles:
 
 In[6]:
 
@@ -149,6 +159,8 @@ In[6]:
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_01.png
 
+Check to make sure that all indices are unique!
+
 In[7]:
 
 .. sourcecode:: python
@@ -165,6 +177,7 @@ In[7]:
 
     All indices unique =  True
 
+Now let's get fancy. Define a spherically symmetric density distribution, and apply some refinement: 
 
 In[8]:
 
@@ -218,6 +231,7 @@ In[8]:
     yt : [INFO     ] 2012-12-13 02:55:21,171 Adding particle_index to list of fields
     yt : [INFO     ] 2012-12-13 02:55:21,171 Adding particle_gas_density to list of fields
 
+Now, on our refined domain, we can generate a set of particles whose positions are drawn from a density distribution, which by default is just the "Density" grid field. We'll restrict the particles to exist within a spherical region of radius 0.5. We'll also fill the "particle_gas_density" field by mapping the grid-based density field to the particle positions. Finally, before applying the particles to the stream, we'll remove the previously existing particles by setting "clobber=True".
 
 In[9]:
 
@@ -245,6 +259,7 @@ In[9]:
     yt : [INFO     ] 2012-12-13 02:55:22,777 Getting field z from 3
     yt : [INFO     ] 2012-12-13 02:55:22,904 Getting field dz from 3
 
+When we plot slices of density and the "particle_gas_density" field mapped back to the grid, we find that the particles are distributed according to the density variable. 
 
 In[10]:
 
@@ -279,4 +294,6 @@ In[10]:
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_02.png
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_03.png
+
+Any per-volume field (e.g., energy density, dark matter density) may serve as a distribution function for the particle positions. 
 
