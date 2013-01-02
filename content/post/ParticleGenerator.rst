@@ -100,7 +100,7 @@ In[23]:
 
     slc = SlicePlot(ug, 2, ["Density"], center=ug.domain_center)
     slc.set_cmap("Density","spring")
-    slc.annotate_particles(0.2, p_size=10.0) # Display all particles within a thick slab of width 0.2 times the domain width
+    slc.annotate_particles(0.2, p_size=10.0) # Display all particles within a thick slab 0.2 times the domain width
     slc.show()
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_00.png
@@ -115,7 +115,7 @@ In[24]:
 
 .. sourcecode:: python
 
-    pdims = np.array([10,10,10]) # number of particles on a side in each dimension, the total number of particles is the product of these
+    pdims = np.array([10,10,10]) # number of particles on a side in each dimension
     ple = np.array([0.6,0.6,0.6]) # left edge of particle positions
     pre = np.array([0.9,0.9,0.9]) # right edge of particle positions
     particles2 = LatticeParticleGenerator(ug, pdims, ple, pre, field_list)
@@ -185,7 +185,7 @@ In[28]:
 .. sourcecode:: python
 
     num_particles3 = 100000
-    map_dict = {"Density": "particle_gas_density"} # key is grid field to be mapped, value is particle field to receive the mapping
+    map_dict = {"Density": "particle_gas_density"} # key is grid field, value is particle field
     sphere = pf.h.sphere(pf.domain_center, (0.5, "unitary"))
     particles3 = WithDensityParticleGenerator(pf, sphere, num_particles3,
                                               field_list)
