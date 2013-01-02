@@ -2,13 +2,22 @@ Particle Generators
 ===================
 
 
-`Notebook Download <https://hub.yt-project.org/go/i483hp>`_
+`Notebook Download <https://hub.yt-project.org/go/mf0ba2>`_
 
-Generating particle initial conditions is now possible in yt. The following shows how to generate particle fields from pre-defined particle lists, lattice distributions, and distributions based on density fields. 
 
-First, let's define a grid field that is mapped from a particle-based density field, and a function to assign indices to particles:
- 
-In[1]:
+Generating particle initial conditions is now possible in yt. The
+following shows how to generate particle fields from pre-defined
+particle lists, lattice distributions, and distributions based on
+density fields.
+
+First, we define a gridded density field where the particle density
+field has been "cloud-in-cell" (CIC) interpolated to the grid, and
+define a function that assigns a set of particle indices based on a
+number of particles and a starting index. This is for a case where we
+want to add particles to an already existing set but make sure they have
+uniqune indices.
+
+In[20]:
 
 .. sourcecode:: python
 
@@ -31,16 +40,16 @@ In[1]:
                      np.array(data.ActiveDimensions).astype(np.int32),
                      np.float64(data['dx']))
         return blank
-    add_field("ParticleGasDensity", function=_pgdensity,
+    add_field("particle_density_cic", function=_pgdensity,
               validators=[ValidateGridType()], 
-              display_name=r"$\mathrm{Particle}\/\mathrm{Gas}\/\mathrm{Density}$")
+              display_name=r"$\mathrm{Particle}\/\mathrm{Density}$")
     
     def add_indices(npart, start_num) :
         return np.arange((npart)) + start_num
 
-Next, we'll set up a uniform grid with some random data:
+Next, we'll set up a uniform grid with some random density data:
 
-In[2]:
+In[21]:
 
 .. sourcecode:: python
 
@@ -49,31 +58,23 @@ In[2]:
     fields = {"Density": dens}
     ug = load_uniform_grid(fields, domain_dims, 1.0)
 
-.. parsed-literal::
+As a first example, we'll generate particle fields from pre-existing
+NumPy arrays. First, we define a list of particle field names, and then
+assign random positions to the particles in one corner of the grid. We
+then call FromListParticleGenerator, which generates the particles.
+assign\_indices assigns the indices (using numpy.arange by default).
+apply\_to\_stream applies the particle fields to the grid.
 
-    yt : [INFO     ] 2012-12-13 02:55:15,381 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:15,381 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:15,382 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:15,383 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:15,383 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:15,384 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:15,384 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:15,385 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:15,385 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:15,386 Parameters: cosmological_simulation   = 0.0
-
-Here, we define a particle field list, and then assign random positions to the particles in one corner of the grid. We generate the particles, assign the indices, and then apply them to the grid. By default, indices are assigned using numpy.arange. 
-
-In[3]:
+In[22]:
 
 .. sourcecode:: python
 
     num_particles1 = 10000
     field_list = ["particle_position_x","particle_position_y",
                   "particle_position_z","particle_gas_density"]
-    x = np.random.uniform(low=0.0, high=0.5, size=num_particles1)
-    y = np.random.uniform(low=0.0, high=0.5, size=num_particles1)
-    z = np.random.uniform(low=0.0, high=0.5, size=num_particles1)
+    x = np.random.uniform(low=0.0, high=0.5, size=num_particles1) # random positions
+    y = np.random.uniform(low=0.0, high=0.5, size=num_particles1) # random positions
+    z = np.random.uniform(low=0.0, high=0.5, size=num_particles1) # random positions
     pdata = {'particle_position_x':x,
              'particle_position_y':y,
              'particle_position_z':z}
@@ -83,47 +84,40 @@ In[3]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 02:55:15,397 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:15,400 Adding particle_position_z to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:15,401 Adding particle_index to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:15,401 Adding particle_position_x to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:15,402 Adding particle_position_y to list of fields
+    yt : [INFO     ] 2013-01-01 21:24:32,484 Adding Density to list of fields
+    yt : [INFO     ] 2013-01-01 21:24:32,486 Adding particle_position_z to list of fields
+    yt : [INFO     ] 2013-01-01 21:24:32,487 Adding particle_index to list of fields
+    yt : [INFO     ] 2013-01-01 21:24:32,487 Adding particle_position_x to list of fields
+    yt : [INFO     ] 2013-01-01 21:24:32,488 Adding particle_position_y to list of fields
 
-Plotting this up:
 
-In[4]:
+Now that the particles are part of the parameter file, they may be
+manipulated and plotted:
+
+In[23]:
 
 .. sourcecode:: python
 
     slc = SlicePlot(ug, 2, ["Density"], center=ug.domain_center)
     slc.set_cmap("Density","spring")
-    slc.annotate_particles(0.2, p_size=10.0)
+    slc.annotate_particles(0.2, p_size=10.0) # Display all particles within a thick slab of width 0.2 times the domain width
     slc.show()
-
-.. parsed-literal::
-
-    yt : [INFO     ] 2012-12-13 02:55:15,433 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:15,433 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:15,434 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:15,442 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:15,443 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:15,445 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:15,455 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:16,493 Getting field particle_position_x from 1
-    yt : [INFO     ] 2012-12-13 02:55:16,517 Getting field particle_position_y from 1
-
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_00.png
 
-Now let's try adding a lattice-based particle distribution. Let's choose ten particles on a side, and place them in a small region away from the random particles. We'll use the special add_indices function we defined earlier to assign indices that are all different from the ones the already existing particles have. 
+Now let's try adding a particle distribution in a lattice-shaped spatial
+arrangement. Let's choose ten particles on a side, and place them in a
+small region away from the random particles. We'll use the special
+add\_indices function we defined earlier to assign indices that are all
+different from the ones the already existing particles have.
 
-In[5]:
+In[24]:
 
 .. sourcecode:: python
 
-    pdims = np.array([10,10,10])
-    ple = np.array([0.6,0.6,0.6])
-    pre = np.array([0.9,0.9,0.9])
+    pdims = np.array([10,10,10]) # number of particles on a side in each dimension, the total number of particles is the product of these
+    ple = np.array([0.6,0.6,0.6]) # left edge of particle positions
+    pre = np.array([0.9,0.9,0.9]) # right edge of particle positions
     particles2 = LatticeParticleGenerator(ug, pdims, ple, pre, field_list)
     particles2.assign_indices(function=add_indices, npart=np.product(pdims),
                               start_num=num_particles1)
@@ -131,11 +125,12 @@ In[5]:
 
 .. parsed-literal::
 
-    yt : [INFO     ] 2012-12-13 02:55:17,222 Adding particle_gas_density to list of fields
+    yt : [INFO     ] 2013-01-01 21:24:33,957 Adding particle_gas_density to list of fields
+
 
 We now have both sets of particles:
 
-In[6]:
+In[25]:
 
 .. sourcecode:: python
 
@@ -144,156 +139,81 @@ In[6]:
     slc.annotate_particles(0.2, p_size=10.0)
     slc.show()
 
-.. parsed-literal::
-
-    yt : [INFO     ] 2012-12-13 02:55:17,244 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:17,245 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:17,245 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:17,254 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:17,254 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:17,257 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:17,267 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:18,032 Getting field particle_position_x from 1
-    yt : [INFO     ] 2012-12-13 02:55:18,057 Getting field particle_position_y from 1
-
-
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_01.png
 
-Check to make sure that all indices are unique!
+And by sorting all of the indices we can check that all of them are
+unique, as advertised:
 
-In[7]:
+In[26]:
 
 .. sourcecode:: python
 
-    indices = np.sort(np.int32(ug.h.all_data()["particle_index"]))
+    dd = ug.h.all_data()
+    indices = np.sort(np.int32(dd["particle_index"]))
     print "All indices unique = ", np.all(np.unique(indices) == indices)
-
-.. parsed-literal::
-
-    yt : [INFO     ] 2012-12-13 02:55:18,817 Getting field particle_index from 1
-
 
 .. parsed-literal::
 
     All indices unique =  True
 
-Now let's get fancy. Define a spherically symmetric density distribution, and apply some refinement: 
 
-In[8]:
+Now let's get fancy. We will use the initial conditions capabilities of
+yt to apply a spherically symmetric density distribution based on the
+"beta-model" functional form, and set up a refinement method based on
+overdensity. Then, we will call refine\_amr to apply this density
+distribution and refine the grid based on the overdensity over some
+value.
+
+In[27]:
 
 .. sourcecode:: python
 
-    fo = [ic.BetaModelSphere(1.0,0.1,0.5,[0.5,0.5,0.5],{"Density":(10.0)})]
+    fo = [ic.BetaModelSphere(1.0,0.1,0.5,[0.5,0.5,0.5],{"Density":(10.0)})] 
     rc = [fm.flagging_method_registry["overdensity"](4.0)]
     pf = refine_amr(ug, rc, fo, 3)
 
-.. parsed-literal::
+Now, we have an interesting density field to serve as a distribution
+function for particle positions. What we do next is define a spherical
+region over which particle positions will be generated based on the
+local grid density. We also will map the grid density to a particle
+density field using cloud-in-cell interpolation. Finally, when we apply
+these particles, we will set the optional argument clobber=True, which
+will remove the particles we already created.
 
-    yt : [INFO     ] 2012-12-13 02:55:18,824 Refining another level.  Current max level: 0
-    yt : [INFO     ] 2012-12-13 02:55:20,011 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,012 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:20,012 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:20,013 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:20,014 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,014 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,015 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:20,015 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:20,016 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:20,016 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,018 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:20,019 Refining another level.  Current max level: 1
-    yt : [INFO     ] 2012-12-13 02:55:20,583 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,584 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:20,584 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:20,585 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:20,586 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,586 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,587 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:20,587 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:20,588 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:20,588 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:20,590 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:20,591 Refining another level.  Current max level: 2
-    yt : [INFO     ] 2012-12-13 02:55:21,147 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:21,148 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:21,148 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:21,149 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:21,150 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:21,150 Parameters: current_time              = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:21,150 Parameters: domain_dimensions         = [128 128 128]
-    yt : [INFO     ] 2012-12-13 02:55:21,151 Parameters: domain_left_edge          = [ 0.  0.  0.]
-    yt : [INFO     ] 2012-12-13 02:55:21,151 Parameters: domain_right_edge         = [ 1.  1.  1.]
-    yt : [INFO     ] 2012-12-13 02:55:21,152 Parameters: cosmological_simulation   = 0.0
-    yt : [INFO     ] 2012-12-13 02:55:21,165 Adding Density to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:21,169 Adding particle_position_z to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:21,170 Adding particle_position_x to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:21,170 Adding particle_position_y to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:21,171 Adding particle_index to list of fields
-    yt : [INFO     ] 2012-12-13 02:55:21,171 Adding particle_gas_density to list of fields
-
-Now, on our refined domain, we can generate a set of particles whose positions are drawn from a density distribution, which by default is just the "Density" grid field. We'll restrict the particles to exist within a spherical region of radius 0.5. We'll also fill the "particle_gas_density" field by mapping the grid-based density field to the particle positions. Finally, before applying the particles to the stream, we'll remove the previously existing particles by setting "clobber=True".
-
-In[9]:
+In[28]:
 
 .. sourcecode:: python
 
     num_particles3 = 100000
-    map_dict = {"Density": "particle_gas_density"}
+    map_dict = {"Density": "particle_gas_density"} # key is grid field to be mapped, value is particle field to receive the mapping
     sphere = pf.h.sphere(pf.domain_center, (0.5, "unitary"))
     particles3 = WithDensityParticleGenerator(pf, sphere, num_particles3,
                                               field_list)
     particles3.assign_indices()
-    particles3.map_grid_fields_to_particles(map_dict)
-    particles3.apply_to_stream(clobber=True)
+    particles3.map_grid_fields_to_particles(map_dict) # Map density fields to particle fields
+    particles3.apply_to_stream(clobber=True) # Get rid of all pre-existing particles
 
-.. parsed-literal::
+Now we'll plot up both the grid density field and the
+"particle\_density\_cic" field (defined at the top of the script), which
+is mapped from the particles onto the grid. We also overplot the
+particle positions. These should roughly correspond to the non-zero
+values of "particle\_density\_cic", but there will be some discrepancies
+due to the fact that they are taken from a thick slab and only a slice
+of the grid-based field is shown.
 
-    yt : [INFO     ] 2012-12-13 02:55:21,239 Getting field x from 3
-    yt : [INFO     ] 2012-12-13 02:55:21,689 Getting field Density from 3
-    yt : [INFO     ] 2012-12-13 02:55:21,817 Getting field dx from 3
-    yt : [INFO     ] 2012-12-13 02:55:21,954 Getting field dy from 3
-    yt : [INFO     ] 2012-12-13 02:55:22,110 Getting field dz from 3
-    yt : [INFO     ] 2012-12-13 02:55:22,296 Getting field dx from 3
-    yt : [INFO     ] 2012-12-13 02:55:22,472 Getting field y from 3
-    yt : [INFO     ] 2012-12-13 02:55:22,594 Getting field dy from 3
-    yt : [INFO     ] 2012-12-13 02:55:22,777 Getting field z from 3
-    yt : [INFO     ] 2012-12-13 02:55:22,904 Getting field dz from 3
-
-When we plot slices of density and the "particle_gas_density" field mapped back to the grid, we find that the particles are distributed according to the density variable. 
-
-In[10]:
+In[29]:
 
 .. sourcecode:: python
 
-    slc = SlicePlot(pf, 2, ["Density","ParticleGasDensity"], center=pf.domain_center)
+    slc = SlicePlot(pf, 2, ["Density","particle_density_cic"], center=pf.domain_center)
     slc.set_log("Density", True)
-    slc.set_log("ParticleGasDensity", True)
+    slc.set_log("particle_density_cic", True)
     slc.set_cmap("all", "spring")
     slc.annotate_grids()
     slc.annotate_particles(0.01,p_size=3)
     slc.show()
 
-.. parsed-literal::
-
-    yt : [INFO     ] 2012-12-13 02:55:24,319 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:24,319 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:24,320 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:24,328 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:24,339 xlim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:24,340 ylim = 0.000000 1.000000
-    yt : [INFO     ] 2012-12-13 02:55:24,342 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:24,351 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:24,362 Making a fixed resolution buffer of (ParticleGasDensity) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:24,371 Making a fixed resolution buffer of (Density) 800 by 800
-    yt : [INFO     ] 2012-12-13 02:55:27,080 Getting field particle_position_x from 3
-    yt : [INFO     ] 2012-12-13 02:55:27,206 Getting field particle_position_y from 3
-    yt : [INFO     ] 2012-12-13 02:55:27,572 Getting field particle_position_x from 3
-    yt : [INFO     ] 2012-12-13 02:55:27,696 Getting field particle_position_y from 3
-
-
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_02.png
 
 .. attachment-image:: ParticleGenerator_files/ParticleGenerator_ipynb_fig_03.png
-
-Any per-volume field (e.g., energy density, dark matter density) may serve as a distribution function for the particle positions. 
 
