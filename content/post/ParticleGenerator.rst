@@ -1,6 +1,7 @@
 Particle Generators
 ===================
 
+.. date: 1357283100
 
 `Notebook Download <https://hub.yt-project.org/go/mf0ba2>`_
 
@@ -17,7 +18,7 @@ number of particles and a starting index. This is for a case where we
 want to add particles to an already existing set but make sure they have
 uniqune indices.
 
-In[20]:
+In[1]:
 
 .. sourcecode:: python
 
@@ -49,7 +50,7 @@ In[20]:
 
 Next, we'll set up a uniform grid with some random density data:
 
-In[21]:
+In[2]:
 
 .. sourcecode:: python
 
@@ -65,7 +66,7 @@ then call FromListParticleGenerator, which generates the particles.
 assign\_indices assigns the indices (using numpy.arange by default).
 apply\_to\_stream applies the particle fields to the grid.
 
-In[22]:
+In[3]:
 
 .. sourcecode:: python
 
@@ -94,7 +95,7 @@ In[22]:
 Now that the particles are part of the parameter file, they may be
 manipulated and plotted:
 
-In[23]:
+In[4]:
 
 .. sourcecode:: python
 
@@ -111,7 +112,7 @@ small region away from the random particles. We'll use the special
 add\_indices function we defined earlier to assign indices that are all
 different from the ones the already existing particles have.
 
-In[24]:
+In[5]:
 
 .. sourcecode:: python
 
@@ -130,7 +131,7 @@ In[24]:
 
 We now have both sets of particles:
 
-In[25]:
+In[6]:
 
 .. sourcecode:: python
 
@@ -144,7 +145,7 @@ In[25]:
 And by sorting all of the indices we can check that all of them are
 unique, as advertised:
 
-In[26]:
+In[7]:
 
 .. sourcecode:: python
 
@@ -164,7 +165,7 @@ overdensity. Then, we will call refine\_amr to apply this density
 distribution and refine the grid based on the overdensity over some
 value.
 
-In[27]:
+In[8]:
 
 .. sourcecode:: python
 
@@ -180,7 +181,7 @@ density field using cloud-in-cell interpolation. Finally, when we apply
 these particles, we will set the optional argument clobber=True, which
 will remove the particles we already created.
 
-In[28]:
+In[9]:
 
 .. sourcecode:: python
 
@@ -201,7 +202,7 @@ values of "particle\_density\_cic", but there will be some discrepancies
 due to the fact that they are taken from a thick slab and only a slice
 of the grid-based field is shown.
 
-In[29]:
+In[10]:
 
 .. sourcecode:: python
 
