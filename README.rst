@@ -15,13 +15,13 @@ How to Add an IPython Notebook
 First, download the nbconvert repository from the IPython project.  Place that
 directory in your path.
 
-Then, from the root of this blohg directory, run:
+Then, from the root of this blohg directory, run::
 
    python2.7 blohg_converterer.py --post-name "Your Post Name" /path/to/notebook.ipynb
 
 This will upload a copy of your notebook to the Hub as well as converting it to
 ReST, along with all of its attachments.  Then to add it to the blog, with its
-files,
+files::
 
    hg ci -A
 
