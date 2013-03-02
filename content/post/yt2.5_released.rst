@@ -12,6 +12,7 @@ yt is a community-developed analysis and visualization toolkit, primarily direct
 The most visible changes with the 2.5 release include:
 
    * Testing has been greatly expanded, including unit tests and answer testing.
+
    * The capabilities of the “Stream” frontend have been expanded. Uniform grid and   
       AMR-based data can be read into memory, and particle fields can be initialized.
    * The install script now provides for the optional installation of SciPy and the 
