@@ -12,11 +12,11 @@ yt is a community-developed analysis and visualization toolkit, primarily direct
 The most visible changes with the 2.5 release include:
 
    * Testing has been greatly expanded, including unit tests and answer testing.
-
-   * The capabilities of the “Stream” frontend have been expanded. Uniform grid and   
-      AMR-based data can be read into memory, and particle fields can be initialized.
-   * The install script now provides for the optional installation of SciPy and the 
-      Rockstar halo finder.
+   * The capabilities of the ``Stream`` frontend have been expanded. Uniform
+     grid and AMR-based data can be read into memory, and particle fields can be
+     initialized.
+   * The install script now provides for the optional installation of SciPy and the
+     Rockstar halo finder.
    * Surfaces can now be extracted and examined, as well as uploaded to 
      Sketchfab.com for interactive visualization in a web browser.
    * Support for the Athena code has been added.
