@@ -47,13 +47,14 @@ Units and Arrays
 ----------------
 
 This group ambitiously set out the task of incorporating Casey's library
-"dimensionful" into yt.  This library utilizes SymPy for developing a units
-system that can convert between known units as well as affiliate those units
-with array objects.  The hope here is to eliminate much of the existing unit
-handling and field duplication (i.e., CellMass and CellMassMsun) and provide
-easier methods for deploying unit conversions.  This work may take some time to
-integrate into yt 3.0, but it will be a feature of that codebase eventually.
-By the end of the workshop, this group had a working implementation.
+`dimensionful <http://caseywstark.com/blog/2012/code-release-dimensionful/>`_
+into yt.  This library utilizes SymPy for developing a units system that can
+convert between known units as well as affiliate those units with array
+objects.  The hope here is to eliminate much of the existing unit handling and
+field duplication (i.e., CellMass and CellMassMsun) and provide easier methods
+for deploying unit conversions.  This work may take some time to integrate into
+yt 3.0, but it will be a feature of that codebase eventually.  By the end of
+the workshop, this group had a working implementation.
 
 Halo Catalogs
 -------------
