@@ -35,9 +35,10 @@ Grid Data Format
 
 This breakout group focused on building a portable library in C for reading and
 writing data that takes the form of structured, rectilinear grids.  The idea
-here is to adhere to the GDF format, which specifies a self-describing HDF5
-layout for files.  By developing this portable library, the group hopes to be
-able to use yt to `make initial conditions
+here is to adhere to the `GDF format
+<https://bitbucket.org/yt_analysis/grid_data_format>`_, which specifies a
+self-describing HDF5 layout for files.  By developing this portable library,
+the group hopes to be able to use yt to `make initial conditions
 <http://blog.yt-project.org/post/Simple_Grid_Refinement.html>`_, write them out
 in the already-existing GDF writer in yt, and then link simulation codes
 against this library to read them back in and run simulations.  It would also
