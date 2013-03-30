@@ -69,7 +69,7 @@ The new OBJ formatting will produce multi-colored surfaces in both
 `MeshLab <http://meshlab.sourceforge.net/>`_ and `Blender <http://www.blender.org/>`_, 
 an feature not possible with the 
 `previous PLY exporter <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_.  
-To see colors in `MeshLab <http://meshlab.sourceforge.net/>`_ go to the "Render" tab and 
+To see colors in MeshLab go to the "Render" tab and 
 select "Color -> Per Face".  Note in both MeshLab and Blender, unlike Sketchfab, you can't see 
 transparencies until you render.
 
@@ -77,7 +77,7 @@ transparencies until you render.
 ------------------
 
 If you've started poking around the actual code instead of skipping off to 
-lose a few days running around your own simulations with one renderer or another 
+lose a few days running around your own simulations 
 you may have noticed there are a few more options then those listed above, 
 specifically, a few related to something called "Emissivity."  This allows you 
 to output one more type of variable on your surfaces.  For example:
