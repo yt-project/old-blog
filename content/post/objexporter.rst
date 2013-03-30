@@ -33,7 +33,9 @@ to export 3D surfaces.  However, one can now specify a transparency for each
 surface of interest and each is ennumerated in the OBJ files with the 
 ``plot_index``.  This means one could potentially add surfaces to a previously 
 created file by setting ``plot_index`` to the number of previously written 
-surfaces.  One tricky thing: the headers of the OBJ and MTL files point to 
+surfaces.  
+
+One tricky thing: the headers of the OBJ and MTL files point to 
 each other.  This means if you move one or both of the files you may have to 
 change the headers to reflect their new directory location.
 
