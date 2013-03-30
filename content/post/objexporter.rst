@@ -1,8 +1,27 @@
-3D Surfaces and Sketchfab
-=========================
+OBJ File Exporter for Surfaces
+==============================
 
-Surfaces
---------
+The OBJ File Format
+-------------------
+
+If the ability to manuver around an isosurface of your 3D simulation in 
+`Sketchfab <http://sketchfab.com>`_ cost you a half a day of work (lets be 
+honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
+<http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now 
+upload multiple surfaces of different transparencies in the same file.
+
+.. code-block:: python
+
+   from yt.mods import *
+   pf = load("/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030")
+   rho = [2e-27, 1e-27]
+   trans = [1.0, 0.5]
+   filename = 'surfaces'
+   sphere = pf.h.sphere("max", (1.0, "mpc"))
+   for i,r in enumerate(rho):
+       surf = pf.h.surface(dd, 'Density', r)
+       surf.export_obj(filename, transparency = trans[i], 
+                       color_field='Temperature', plot_index = i)
 
 For a while now, yt has had the ability to extract isosurfaces from volumetric
 data using a `marching cubes <http://en.wikipedia.org/wiki/Marching_cubes>`_
