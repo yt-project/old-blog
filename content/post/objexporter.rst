@@ -4,7 +4,7 @@ OBJ File Exporter for Surfaces
 OBJ and MTL Files
 -----------------
 
-If the ability to manuver around an isosurface of your 3D simulation in 
+If the ability to maneuver around an isosurface of your 3D simulation in 
 `Sketchfab <http://sketchfab.com>`_ cost you a half a day of work (lets be 
 honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
 <http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now 
@@ -30,7 +30,7 @@ galaxy simulation:
 The calling sequence is fairly similar to the ``export_ply`` function 
 `previously used <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_ 
 to export 3D surfaces.  However, one can now specify a transparency for each 
-surface of interest and each is ennumerated in the OBJ files with the 
+surface of interest and each is enumerated in the OBJ files with the 
 ``plot_index``.  This means one could potentially add surfaces to a previously 
 created file by setting ``plot_index`` to the number of previously written 
 surfaces. 
@@ -117,7 +117,7 @@ in the function "create_materials" with:
 
    # ...
 
-                    elif line_lower.startswith(b'tr'):  # trancelucency
+                    elif line_lower.startswith(b'tr'):  # translucency
                         context_material.translucency = float_func(line_split[1])
                     elif line_lower.startswith(b'tf'):
                         # rgb, filter color, blender has no support for this.
@@ -161,11 +161,10 @@ This above bit of code would produce an image like so:
 
 .. attachment-image:: surfaces_blender.png
 
-Note that the hottest/densest stuff is brightly shining, while the cool stuff is less so 
-(making the inner isodensity contour barely visable).
+Note that the hottest stuff is brightly shining, while the cool stuff is less so 
+(making the inner isodensity contour barely visible).
 
 If the Blender image caught your fancy, you'll be happy to know there is a greater 
 integration of Blender and yt in the works, so stay tuned!
-
 
 
