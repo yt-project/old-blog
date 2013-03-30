@@ -78,8 +78,8 @@ transparencies until you render.
 ...One More Option
 ------------------
 
-If you've started poking around the actual code instead of running off to 
-lose a few days to poke around your own simulations with one renderer or another 
+If you've started poking around the actual code instead of skipping off to 
+lose a few days running around your own simulations with one renderer or another 
 you may have noticed there are a few more options then those listed above, 
 specifically, a few related to something called "Emissivity."  This allows you 
 to output one more type of variable on your surfaces.  For example:
@@ -128,6 +128,12 @@ in the function "create_materials" with:
                         illum = int(line_split[1])
 
    # ...
+
+To use this in Blender, you might create a 
+`Blender script <http://cgcookie.com/blender/2011/08/26/introduction-to-scripting-with-python-in-blender/>`_ 
+like the following:
+
+
 
 Mention that blender can use emissivity to do some lighting effects, but you 
 have to modify the io_scene_obj reader.  Put where that file is located.
