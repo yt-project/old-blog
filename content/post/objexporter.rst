@@ -5,7 +5,7 @@ OBJ and MTL Files
 -----------------
 
 If the ability to maneuver around an isosurface of your 3D simulation in 
-`Sketchfab <http://sketchfab.com>`_ cost you a half a day of work (let's be 
+`Sketchfab <http://sketchfab.com>`_ cost you half a day of work (let's be 
 honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
 <http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now 
 upload multiple surfaces of different transparencies in the same file.
@@ -69,7 +69,7 @@ Importing to MeshLab and Blender
 
 The new OBJ formatting will produce multi-colored surfaces in both 
 `MeshLab <http://meshlab.sourceforge.net/>`_ and `Blender <http://www.blender.org/>`_, 
-an feature not possible with the 
+a feature not possible with the 
 `previous PLY exporter <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_.  
 To see colors in MeshLab go to the "Render" tab and 
 select "Color -> Per Face".  Note in both MeshLab and Blender, unlike Sketchfab, you can't see 
