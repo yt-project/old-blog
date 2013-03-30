@@ -37,7 +37,7 @@ surfaces.
 
 One tricky thing: the header of the OBJ file points to the MTL file (with 
 the header command ``mtllib``).  This means if you move one or both of the files 
-you may have to change the headers to reflect their new directory location.
+you may have to change the header to reflect their new directory location.
 
 A Few More Options
 ------------------
@@ -72,16 +72,62 @@ The new OBJ formatting will produce multi-colored surfaces in both
 which was not possible with the 
 `previous PLY exporter <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_.  
 To see colors in `MeshLab <http://meshlab.sourceforge.net/>`_ go to the "Render" tab and 
-select "Color -> Per Face".  Note in both MeshLab and Blender, unlike SketchFab, you can't see 
+select "Color -> Per Face".  Note in both MeshLab and Blender, unlike Sketchfab, you can't see 
 transparencies until you render.
 
 ...One More Option
 ------------------
 
-Mention emissivity, talk about the fact that what we are using is a modified form 
-of the OBJ file format to include the emissivity of an object.
+If you've started poking around the actual code instead of running off to 
+lose a few days to poke around your own simulations with one renderer or another 
+you may have noticed there are a few more options then those listed above, 
+specifically, a few related to something called "Emissivity."  This allows you 
+to output one more type of variable on your surfaces.  For example:
 
-Include code snippet.
+.. code-block:: python
+
+   from yt.mods import *
+   pf = load("/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030")
+   rho = [2e-27, 1e-27]
+   trans = [1.0, 0.5]
+   filename = './surfaces'
+   def _Emissivity(field, data):
+       return (data['Density']*data['Density']*np.sqrt(data['Temperature']))
+   add_field("Emissivity", function=_Emissivity, units=r"\rm{g K}/\rm{cm}^{6}")
+   sphere = pf.h.sphere("max", (1.0, "mpc"))
+   for i,r in enumerate(rho):
+       surf = pf.h.surface(sphere, 'Density', r)
+       surf.export_obj(filename, transparency = trans[i], 
+                       color_field='Temperature', emit_field = 'Emissivity', 
+		       plot_index = i)
+
+will output the same OBJ and MTL as in our previous example, but it will scale 
+an emissivity parameter by our new field.  Technically, this makes our outputs 
+not really OBJ files at all, but a new sort of hybrid file, however we needn't worry 
+too much about that for now.  
+
+This parameter is useful if you want to upload your files in Blender and have the 
+embedded rendering engine do some approximate ray-tracing on your transparencies 
+and emissivities.   This does take some slight modifications to the OBJ importer 
+scripts in Blender.  For example, on a Mac, you would modify the file 
+"/Applications/Blender/blender.app/Contents/MacOS/2.65/scripts/addons/io_scene_obj/import_obj.py", 
+in the function "create_materials" with:
+
+.. code-block:: python
+
+   # ...
+
+                    elif line_lower.startswith(b'tr'):  # trancelucency
+                        context_material.translucency = float_func(line_split[1])
+                    elif line_lower.startswith(b'tf'):
+                        # rgb, filter color, blender has no support for this.
+                        pass
+                    elif line_lower.startswith(b'em'): # MODIFIED HERE
+                        context_material.emit = float_func(line_split[1])
+                    elif line_lower.startswith(b'illum'):
+                        illum = int(line_split[1])
+
+   # ...
 
 Mention that blender can use emissivity to do some lighting effects, but you 
 have to modify the io_scene_obj reader.  Put where that file is located.
