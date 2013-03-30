@@ -9,7 +9,9 @@ If the ability to manuver around an isosurface of your 3D simulation in
 honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
 <http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now 
 upload multiple surfaces of different transparencies in the same file.
-Behold:
+The following code snippet produces two files containing the vertex info 
+(surfaces.obj) and color/transparency info (surfaces.mtl) for a 3D 
+galaxy simulation:
 
 .. code-block:: python
 
