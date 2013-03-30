@@ -162,7 +162,7 @@ This above bit of code would produce an image like so:
 .. attachment-image:: surfaces_blender.png
 
 Note that the hottest stuff is brightly shining, while the cool stuff is less so 
-(making the inner isodensity contour barely visible).
+(making the inner isodensity contour barely visible from the outside of the surfaces).
 
 If the Blender image caught your fancy, you'll be happy to know there is a greater 
 integration of Blender and yt in the works, so stay tuned!
