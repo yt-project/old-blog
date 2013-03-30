@@ -23,8 +23,7 @@ galaxy simulation:
    sphere = pf.h.sphere("max", (1.0, "mpc"))
    for i,r in enumerate(rho):
        surf = pf.h.surface(sphere, 'Density', r)
-       surf.export_obj(filename, transparency = trans[i], 
-                       color_field='Temperature', plot_index = i)
+       surf.export_obj(filename, transparency = trans[i], color_field='Temperature', plot_index = i)
 
 The calling sequence is fairly similar to the ``export_ply`` function 
 `previously used <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_ 
