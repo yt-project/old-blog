@@ -1,14 +1,15 @@
 OBJ File Exporter for Surfaces
 ==============================
 
-The OBJ File Format
--------------------
+OBJ and MTL Files
+-----------------
 
 If the ability to manuver around an isosurface of your 3D simulation in 
 `Sketchfab <http://sketchfab.com>`_ cost you a half a day of work (lets be 
 honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
 <http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now 
 upload multiple surfaces of different transparencies in the same file.
+Behold:
 
 .. code-block:: python
 
@@ -22,6 +23,15 @@ upload multiple surfaces of different transparencies in the same file.
        surf = pf.h.surface(dd, 'Density', r)
        surf.export_obj(filename, transparency = trans[i], 
                        color_field='Temperature', plot_index = i)
+
+The calling sequence is fairly similar to the ``export_ply`` function 
+`previously used <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_ 
+to export 3D surfaces.  However, one can now specify a transparency for each 
+surface of interest and each is ennumerated in the OBJ files with the 
+``plot_index``.  This means one could potentially add surfaces to a previously 
+created file by setting ``plot_index`` to the number of previously written 
+surfaces.
+
 
 For a while now, yt has had the ability to extract isosurfaces from volumetric
 data using a `marching cubes <http://en.wikipedia.org/wiki/Marching_cubes>`_
