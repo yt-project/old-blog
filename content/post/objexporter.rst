@@ -157,12 +157,15 @@ like the following:
    scene.render.filepath ='/Users/jillnaiman/surfaces_blender' # needs full path
    bpy.ops.render.render(write_still=True)
 
+This above bit of code would produce an image like so:
+
+.. attachment-image:: surfaces_blender.png
+
+Note that the hottest/densest stuff is brightly shining, while the cool stuff is less so 
+(making the inner isodensity contour barely visable).
+
+If the Blender image caught your fancy, you'll be happy to know there is a greater 
+integration of Blender and yt in the works, so stay tuned!
 
 
-Mention that blender can use emissivity to do some lighting effects, but you 
-have to modify the io_scene_obj reader.  Put where that file is located.
-
-Put in modification code snippet, mention you have to turn on the right lighting 
-in blender.  Say a more therow integration of yt and blender is in the works, so 
-stay tuned!
 
