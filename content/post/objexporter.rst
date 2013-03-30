@@ -35,9 +35,9 @@ surface of interest and each is ennumerated in the OBJ files with the
 created file by setting ``plot_index`` to the number of previously written 
 surfaces.  
 
-One tricky thing: the headers of the OBJ and MTL files point to 
-each other.  This means if you move one or both of the files you may have to 
-change the headers to reflect their new directory location.
+One tricky thing: the header of the OBJ file points to the MTL file (with 
+the header command ``mtllib``).  This means if you move one or both of the files 
+you may have to change the headers to reflect their new directory location.
 
 Uploading to SketchFab
 ----------------------
