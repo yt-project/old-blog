@@ -33,13 +33,7 @@ to export 3D surfaces.  However, one can now specify a transparency for each
 surface of interest and each is ennumerated in the OBJ files with the 
 ``plot_index``.  This means one could potentially add surfaces to a previously 
 created file by setting ``plot_index`` to the number of previously written 
-surfaces.  Behold the output of the above script:
-
-.. raw:: html
-
-   <iframe frameborder="0" height="480" width="854" allowFullScreen
-   webkitallowfullscreen="true" mozallowfullscreen="true"
-   src="http://skfb.ly/5k4j2fdca"></iframe>
+surfaces. 
 
 One tricky thing: the header of the OBJ file points to the MTL file (with 
 the header command ``mtllib``).  This means if you move one or both of the files 
@@ -50,12 +44,25 @@ A Few More Options
 
 There are a few extra inputs for formatting the surface files you may want to use.
 
-(1) Put max and min of color field, and dist_fac
+(1) Setting ``dist_fac`` will divide all the vertex coordinates by this factor.  
+Default will scale the vertices by the physical bounds of your sphere.
+
+(2) Setting ``color_field_max`` and/or ``color_field_min`` will scale the colors 
+of all surfaces between this min and max.  Default is to scale the colors of each 
+surface to their own min and max values.
 
 Uploading to SketchFab
 ----------------------
 
-put ziping stuff and an example
+To upload to `Sketchfab <http://sketchfab.com>`_ one only needs to zip the 
+OBJ and MTL files together, and then upload via your dashboard prompts in 
+the usual way.  For example, the above script produces:
+
+.. raw:: html
+
+   <iframe frameborder="0" height="480" width="854" allowFullScreen
+   webkitallowfullscreen="true" mozallowfullscreen="true"
+   src="http://skfb.ly/5k4j2fdca"></iframe>
 
 Importing to MeshLab and Blender
 --------------------------------
