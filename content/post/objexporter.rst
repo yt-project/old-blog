@@ -49,6 +49,7 @@ A Few More Options
 ------------------
 
 There are a few extra inputs for formatting the surface files you may want to use.
+
 (1) Put max and min of color field, and dist_fac
 
 Uploading to SketchFab
