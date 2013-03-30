@@ -67,11 +67,13 @@ the usual way.  For example, the above script produces:
 Importing to MeshLab and Blender
 --------------------------------
 
-For meshlab: Put in info about how to trace colors to face.  Mention that transparency 
-won't show up.
-
-For blender, mention that now you see colors, and again, transparency doesn't show 
-up until render.  
+The new OBJ formatting will produce multi-colored surfaces in both 
+`MeshLab <http://meshlab.sourceforge.net/>`_ and `Blender <http://www.blender.org/>`_ 
+which was not possible with the 
+`previous PLY exporter <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_.  
+To see colors in `MeshLab <http://meshlab.sourceforge.net/>`_ go to the "Render" tab and 
+select "Color -> Per Face".  Note in both MeshLab and Blender, unlike SketchFab, you can't see 
+transparencies until you render.
 
 ...One More Option
 ------------------
