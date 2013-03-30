@@ -39,6 +39,11 @@ One tricky thing: the header of the OBJ file points to the MTL file (with
 the header command ``mtllib``).  This means if you move one or both of the files 
 you may have to change the headers to reflect their new directory location.
 
+A Few More Options
+------------------
+
+
+
 Uploading to SketchFab
 ----------------------
 
