@@ -23,7 +23,7 @@ galaxy simulation:
    filename = './surfaces'
    sphere = pf.h.sphere("max", (1.0, "mpc"))
    for i,r in enumerate(rho):
-       surf = pf.h.surface(dd, 'Density', r)
+       surf = pf.h.surface(sphere, 'Density', r)
        surf.export_obj(filename, transparency = trans[i], 
                        color_field='Temperature', plot_index = i)
 
