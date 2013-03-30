@@ -133,6 +133,30 @@ To use this in Blender, you might create a
 `Blender script <http://cgcookie.com/blender/2011/08/26/introduction-to-scripting-with-python-in-blender/>`_ 
 like the following:
 
+.. code-block:: python
+
+   import bpy
+   from math import *
+
+   bpy.ops.import_scene.obj(filepath='./surfaces.obj') # will use new importer
+
+   # set up lighting = indirect
+   bpy.data.worlds['World'].light_settings.use_indirect_light = True
+   bpy.data.worlds['World'].horizon_color = [0.0, 0.0, 0.0] # background = black
+   # have to use approximate, not ray tracing for emitting objects ...
+   #   ... for now... 
+   bpy.data.worlds['World'].light_settings.gather_method = 'APPROXIMATE' 
+   bpy.data.worlds['World'].light_settings.indirect_factor=20. # turn up all emiss
+   
+   # set up camera to be on -x axis, facing toward your object
+   scene = bpy.data.scenes["Scene"]
+   scene.camera.location = [-0.12, 0.0, 0.0] # location
+   scene.camera.rotation_euler = [radians(90.), 0.0, radians(-90.)] # face to (0,0,0)
+   
+   # render
+   scene.render.filepath ='/Users/jillnaiman/surfaces_blender' # needs full path
+   bpy.ops.render.render(write_still=True)
+
 
 
 Mention that blender can use emissivity to do some lighting effects, but you 
