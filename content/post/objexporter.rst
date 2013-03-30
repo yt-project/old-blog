@@ -33,7 +33,13 @@ to export 3D surfaces.  However, one can now specify a transparency for each
 surface of interest and each is ennumerated in the OBJ files with the 
 ``plot_index``.  This means one could potentially add surfaces to a previously 
 created file by setting ``plot_index`` to the number of previously written 
-surfaces.  
+surfaces.  Behold:
+
+.. raw:: html
+
+   <iframe frameborder="0" height="480" width="854" allowFullScreen
+   webkitallowfullscreen="true" mozallowfullscreen="true"
+   src="http://skfb.ly/5k4j2fdca"></iframe>
 
 One tricky thing: the header of the OBJ file points to the MTL file (with 
 the header command ``mtllib``).  This means if you move one or both of the files 
