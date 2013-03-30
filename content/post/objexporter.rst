@@ -28,8 +28,8 @@ galaxy simulation:
 The calling sequence is fairly similar to the ``export_ply`` function 
 `previously used <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_ 
 to export 3D surfaces.  However, one can now specify a transparency for each 
-surface of interest and each is enumerated in the OBJ files with the 
-``plot_index``.  This means one could potentially add surfaces to a previously 
+surface of interest, and each surface is enumerated in the OBJ files with ``plot_index``.  
+This means one could potentially add surfaces to a previously 
 created file by setting ``plot_index`` to the number of previously written 
 surfaces. 
 
