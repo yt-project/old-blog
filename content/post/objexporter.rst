@@ -67,7 +67,7 @@ Importing to MeshLab and Blender
 
 The new OBJ formatting will produce multi-colored surfaces in both 
 `MeshLab <http://meshlab.sourceforge.net/>`_ and `Blender <http://www.blender.org/>`_, 
-an action not possible with the 
+an feature not possible with the 
 `previous PLY exporter <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_.  
 To see colors in `MeshLab <http://meshlab.sourceforge.net/>`_ go to the "Render" tab and 
 select "Color -> Per Face".  Note in both MeshLab and Blender, unlike Sketchfab, you can't see 
