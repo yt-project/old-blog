@@ -122,8 +122,8 @@ in the function "create_materials" with:
                     elif line_lower.startswith(b'tf'):
                         # rgb, filter color, blender has no support for this.
                         pass
-                    elif line_lower.startswith(b'em'): # MODIFIED HERE
-                        context_material.emit = float_func(line_split[1])
+                    elif line_lower.startswith(b'em'): # MODIFY: ADD THIS LINE
+                        context_material.emit = float_func(line_split[1]) # MODIFY: THIS LINE TOO
                     elif line_lower.startswith(b'illum'):
                         illum = int(line_split[1])
 
