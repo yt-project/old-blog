@@ -16,10 +16,12 @@ galaxy simulation:
 .. code-block:: python
 
    from yt.mods import *
+
    pf = load("/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030")
    rho = [2e-27, 1e-27]
    trans = [1.0, 0.5]
    filename = './surfaces'
+
    sphere = pf.h.sphere("max", (1.0, "mpc"))
    for i,r in enumerate(rho):
        surf = pf.h.surface(sphere, 'Density', r)
@@ -85,13 +87,16 @@ to output one more type of variable on your surfaces.  For example:
 .. code-block:: python
 
    from yt.mods import *
+
    pf = load("/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030")
    rho = [2e-27, 1e-27]
    trans = [1.0, 0.5]
    filename = './surfaces'
+
    def _Emissivity(field, data):
        return (data['Density']*data['Density']*np.sqrt(data['Temperature']))
    add_field("Emissivity", function=_Emissivity, units=r"\rm{g K}/\rm{cm}^{6}")
+
    sphere = pf.h.sphere("max", (1.0, "mpc"))
    for i,r in enumerate(rho):
        surf = pf.h.surface(sphere, 'Density', r)
