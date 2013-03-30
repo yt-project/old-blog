@@ -41,11 +41,36 @@ you may have to change the headers to reflect their new directory location.
 
 A Few More Options
 ------------------
-
-
+Put max and min of color field, and dist_fac
 
 Uploading to SketchFab
 ----------------------
+
+put ziping stuff and an example
+
+Importing to MeshLab and Blender
+--------------------------------
+
+For meshlab: Put in info about how to trace colors to face.  Mention that transparency 
+won't show up.
+
+For blender, mention that now you see colors, and again, transparency doesn't show 
+up until render.  
+
+...One More Option
+------------------
+
+Mention emissivity, talk about the fact that what we are using is a modified form 
+of the OBJ file format to include the emissivity of an object.
+
+Include code snippet.
+
+Mention that blender can use emissivity to do some lighting effects, but you 
+have to modify the io_scene_obj reader.  Put where that file is located.
+
+Put in modification code snippet, mention you have to turn on the right lighting 
+in blender.  Say a more therow integration of yt and blender is in the works, so 
+stay tuned!
 
 For a while now, yt has had the ability to extract isosurfaces from volumetric
 data using a `marching cubes <http://en.wikipedia.org/wiki/Marching_cubes>`_
