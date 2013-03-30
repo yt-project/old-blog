@@ -33,7 +33,7 @@ to export 3D surfaces.  However, one can now specify a transparency for each
 surface of interest and each is ennumerated in the OBJ files with the 
 ``plot_index``.  This means one could potentially add surfaces to a previously 
 created file by setting ``plot_index`` to the number of previously written 
-surfaces.  Behold:
+surfaces.  Behold the output of the above script:
 
 .. raw:: html
 
@@ -47,7 +47,9 @@ you may have to change the headers to reflect their new directory location.
 
 A Few More Options
 ------------------
-Put max and min of color field, and dist_fac
+
+There are a few extra inputs for formatting the surface files you may want to use.
+(1) Put max and min of color field, and dist_fac
 
 Uploading to SketchFab
 ----------------------
