@@ -5,12 +5,11 @@ OBJ and MTL Files
 -----------------
 
 If the ability to maneuver around an isosurface of your 3D simulation in 
-`Sketchfab <http://sketchfab.com>`_ cost you a half a day of work (lets be 
+`Sketchfab <http://sketchfab.com>`_ cost you a half a day of work (let's be 
 honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
 <http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now 
 upload multiple surfaces of different transparencies in the same file.
-The following code snippet produces two files in the current 
-directory which contain the vertex info 
+The following code snippet produces two files which contain the vertex info 
 (surfaces.obj) and color/transparency info (surfaces.mtl) for a 3D 
 galaxy simulation:
 
