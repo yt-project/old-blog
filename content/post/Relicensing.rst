@@ -121,7 +121,7 @@ header files.
 At some point in the future, we will likely put out a 2.6 release.  This
 release will be a long-term stable release, and will be available under the BSD
 license linked to above.  But, as of today, checkouts of the code will be
-available undr that license already.
+available under that license already.
 
 Future
 ------
