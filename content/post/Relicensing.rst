@@ -14,7 +14,7 @@ lightly, nor was it particularly seamless, but it was mostly smooth and I think
 overall it is going to be a positive change for the community.
 
 When I originally created yt in the Summer of 2006 (then called Raven) I placed
-it under the then-new GPLv3 license.  This license brought with it an idealogy
+it under the then-new GPLv3 license.  This license brought with it an ideology
 that I support -- free (as in freedom) and open source software, and attempts
 to ensure that the spread of software spreads those freedoms as well.  This is
 done through terms of licensing; while there are several subtleties to how this
