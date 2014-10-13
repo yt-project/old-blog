@@ -20,10 +20,11 @@ This establishes a framework for a few things:
  * Decision making -- particularly when there are conflicts between individuals
    about how to proceed with code changes, with release information, and the
    like.
- * Identification of individuals as "project members," which is not only useful
-   for participation in decision making, but also for placing on a CV, which is
+ * Identification of individuals as "`project members
+   <http://yt-project.org/members.html>`_," which is not only useful for
+   participation in decision making, but also for placing on a CV, which is
    especially useful for younger researchers.
- * Establish liasons between platforms and codes and yt
+ * Establish liaisons between platforms and codes and yt
  * Establish mechanisms for regular checkins and meetings to discuss goings-on
  * Develop standards and processes for code review
 
