@@ -30,7 +30,7 @@ There are `more parameters <http://yt-project.org/docs/dev/visualizing/callbacks
 .. code-block:: python
 
    import yt
-   ds = yt.load("WDmerger_hdf5_chk_1000/WDmerger_hdf5_chk_1000.hdf5")
+   ds = yt.load("WDMerger_hdf5_chk_1000/WDMerger_hdf5_chk_1000.hdf5")
    s = yt.SlicePlot(ds, 'theta', 'magnetic_field_strength', origin='native')
    s.annotate_line_integral_convolution('magnetic_field_x', 'magnetic_field_y', lim=(0.45,0.55), cmap='YlGnBu', alpha=1.,const_alpha=True)
    s.hide_colorbar()
