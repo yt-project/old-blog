@@ -4,7 +4,7 @@ Line Integral Convolution for Vector Field Visualization
 Visualization of Vector Fields
 ------------------------------
 
-When I was working on my first publication with Prof. `Robert Fisher <http://www.umassd.edu/engineering/phy/people/facultyandstaff/robertfisher/>`_, we explored several ways to visualize the magnetic field in our simulations of white dwarf binary merger. Finally we drew magnetic field in the form of streamlines, which did a satisfactory job. However, since the density of streamlines could not go to arbitrarily high, the magnetic field geometry was not spatially continuous and the information near pixel scale was lost.
+When I was working on my first publication with Prof. `Robert Fisher <http://www.umassd.edu/engineering/phy/people/facultyandstaff/robertfisher/>`_, we explored several ways to visualize the magnetic field in our simulations of white dwarf binary merger. Finally we drew magnetic field in the form of streamlines, which did a satisfactory job. However, since the streamlines could not be arbitrarily dense, the magnetic field geometry was not spatially continuous and the information near pixel scale was lost.
 
 Until recently, I got to know the method of line integral convolution (LIC) and adapted the `SciPy cookbook example <http://wiki.scipy.org/Cookbook/LineIntegralConvolution>`_ to yt. The basic idea of LIC is to convolute vector field orientation with local texture over a certain kernel length, thus all the details of vector field geometry can be preserved.
 
