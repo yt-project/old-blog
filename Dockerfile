@@ -15,6 +15,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
 
 RUN cd /tmp && wget --quiet https://github.com/rafaelmartins/blohg/archive/master.zip && \
   unzip -qq master.zip && cd blohg-master/ && \
+  sed -e 's/\(_external=\)True/\1False/' \
+      -i blohg/views.py blohg/rst_parser/roles.py blohg/rst_parser/directives.py \
+         blohg/templates/404.html && \
   python setup.py install && cd /tmp && rm -rf blohg* *.zip
 
 RUN chown fido:fido /srv
