@@ -8,7 +8,7 @@ ext = BlohgExtension(__name__)
 deploy = BlohgBlueprint('deploy', __name__, url_prefix='/deploy')
 
 
-@deploy.route('/')
+@deploy.route('/', methods=['POST'])
 def update_blog():
     client = hglib.open(os.getcwd())
     updated = client.pull(update=True)
