@@ -9,15 +9,13 @@ from blohg.ext import BlohgBlueprint, BlohgExtension
 ext = BlohgExtension(__name__)
 deploy = BlohgBlueprint('deploy', __name__, url_prefix='/deploy')
 
-BB_RANGE1 = ipaddress.ip_network(u'131.103.20.160/24', strict=False)
-BB_RANGE2 = ipaddress.ip_network(u'165.254.145.0/26', strict=False)
-BB_RANGE3 = ipaddress.ip_network(u'104.192.143.0/24', strict=False)
-
+BB_RANGE1 = ipaddress.ip_network(u'104.192.143.192/28', strict=False)
+BB_RANGE2 = ipaddress.ip_network(u'104.192.143.208/28', strict=False)
 
 @deploy.route('/', methods=['POST'])
 def update_blog():
     addr = ipaddress.ip_address(unicode(request.headers.get('X-Real-IP')))
-    if addr in BB_RANGE1 or addr in BB_RANGE2 or addr in BB_RANGE3:
+    if addr in BB_RANGE1 or addr in BB_RANGE2: 
         client = hglib.open(os.getcwd())
         updated = client.pull(update=True)
         client.close()
