@@ -5,7 +5,7 @@ OBJ and MTL Files
 -----------------
 
 If the ability to maneuver around an isosurface of your 3D simulation in
-`Sketchfab <http://sketchfab.com>`_ cost you half a day of work (let's be
+`Sketchfab <https://sketchfab.com>`_ cost you half a day of work (let's be
 honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
 <http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now
 upload multiple surfaces of different transparencies in the same file.
@@ -62,7 +62,7 @@ the usual way.  For example, the above script produces:
 
    <iframe frameborder="0" height="480" width="854" allowFullScreen
    webkitallowfullscreen="true" mozallowfullscreen="true"
-   src="http://skfb.ly/5k4j2fdcb?autostart=0&transparent=0&autospin=0&controls=1&watermark=1">
+   src="https://skfb.ly/5k4j2fdcb?autostart=0&transparent=0&autospin=0&controls=1&watermark=1">
    </iframe>
 
 Importing to MeshLab and Blender

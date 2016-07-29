@@ -120,7 +120,7 @@ embed code from Sketchfab:
 
    <iframe frameborder="0" height="480" width="854" allowFullScreen
    webkitallowfullscreen="true" mozallowfullscreen="true"
-   src="http://skfb.ly/l4jh2edcba?autostart=0&transparent=0&autospin=0&controls=1&watermark=1"></iframe>
+   src="https://skfb.ly/l4jh2edcba?autostart=0&transparent=0&autospin=0&controls=1&watermark=1"></iframe>
 
 As a note, Sketchfab has a maximum model size of 50MB for the free account.
 50MB is pretty hefty, though, so it shouldn't be a problem for most needs.
