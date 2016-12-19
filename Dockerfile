@@ -27,4 +27,4 @@ RUN cd /srv && hg clone https://bitbucket.org/yt_analysis/blog
 
 WORKDIR /srv/blog
 EXPOSE 5000
-CMD ["blohg", "runserver", "-t", "0.0.0.0", "-p", "5000"]
+CMD ["blohg", "runserver", "--no-debug", "-t", "0.0.0.0", "-p", "5000"]
