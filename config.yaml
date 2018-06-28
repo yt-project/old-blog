@@ -7,5 +7,3 @@ AUTHOR: The yt Project
 TIMEZONE: UTC
 #POST_EXT: .rst
 FREEZER_BASE_URL: http://blog.yt-project.org/
-EXTENSIONS:
-   - deploy

@@ -1,0 +1,2 @@
+pygit2==0.25.1
+git+https://github.com/rafaelmartins/blohg#egg=blohg
